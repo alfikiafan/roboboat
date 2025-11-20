@@ -2,9 +2,7 @@
 	<div>
 		<section class="bg-surface-dim py-20">
 			<div class="container mx-auto px-4 text-center">
-				<h1 class="text-4xl font-bold text-primary mb-4">
-					Research & Publications
-				</h1>
+				<h1 class="text-4xl font-bold text-primary mb-4">Team Blog & News</h1>
 				<p class="text-lg text-gray-600">
 					Documenting our journey in engineering autonomous maritime systems.
 				</p>
@@ -67,9 +65,9 @@
 				class="text-center py-20 text-gray-500"
 			>
 				<Icon name="uil:file-search-alt" class="text-6xl mb-4" />
-				<p>No research papers found yet.</p>
+				<p>No articles found yet.</p>
 				<p class="text-xs mt-2 opacity-60">
-					Pastikan ada file .md di folder content/blog
+					Make sure you have added markdown files in the content/blog directory.
 				</p>
 			</div>
 		</section>

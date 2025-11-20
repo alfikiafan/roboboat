@@ -5,25 +5,16 @@
 			:class="
 				isScrolled
 					? 'bg-white/90 backdrop-blur-md shadow-md py-3'
-					: 'bg-white py-5'
+					: 'bg-white py-2'
 			"
 		>
 			<div class="container mx-auto px-4 flex items-center justify-between">
-				<NuxtLink to="/" class="flex items-center gap-3 group">
-					<div
-						class="w-10 h-10 bg-primary text-white rounded flex items-center justify-center font-bold text-xl shadow-lg group-hover:rotate-3 transition transform"
-					>
-						UV
-					</div>
-					<div class="flex flex-col leading-tight">
-						<span
-							class="text-lg font-bold text-primary tracking-wide group-hover:text-secondary transition"
-							>BENGAWAN UV</span
-						>
-						<span class="text-[10px] uppercase tracking-widest text-gray-500"
-							>Roboboat Team</span
-						>
-					</div>
+				<NuxtLink to="/" class="flex items-center gap-2">
+					<img
+						src="/images/logo/bengawan-uv-logo.webp"
+						alt="Bengawan UV Logo"
+						class="h-14"
+					/>
 				</NuxtLink>
 
 				<nav
@@ -65,6 +56,16 @@
 						class="hover:text-primary transition relative group"
 					>
 						Research
+						<span
+							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
+						></span>
+					</NuxtLink>
+					<NuxtLink
+						to="/blog"
+						active-class="text-primary"
+						class="hover:text-primary transition relative group"
+					>
+						Blog
 						<span
 							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
 						></span>
@@ -150,6 +151,12 @@
 							>Research</NuxtLink
 						>
 						<NuxtLink
+							to="/blog"
+							@click="isMobileOpen = false"
+							class="hover:text-primary py-2 border-b border-gray-50"
+							>Blog</NuxtLink
+						>
+						<NuxtLink
 							to="/profile"
 							@click="isMobileOpen = false"
 							class="hover:text-primary py-2 border-b border-gray-50"
@@ -175,17 +182,48 @@
 				<div class="grid md:grid-cols-3 gap-12">
 					<div class="md:col-span-1">
 						<div class="flex items-center gap-2 mb-6">
-							<div
-								class="w-10 h-10 bg-surface text-primary rounded flex items-center justify-center font-bold"
-							>
-								UV
-							</div>
-							<span class="text-xl font-bold tracking-wider">BENGAWAN UV</span>
+							<img
+								src="/images/logo/bengawan-uv-white-logo.webp"
+								alt="Bengawan UV Logo"
+								class="h-16 object-contain"
+							/>
 						</div>
+
 						<p class="text-sm leading-relaxed text-surface-dim mb-6">
 							Developing the future of maritime autonomy. A research team from
 							Universitas Sebelas Maret striving for global excellence.
 						</p>
+
+						<div class="flex gap-4">
+							<a
+								href="mailto:bengawanuv@unit.uns.ac.id"
+								target="_blank"
+								class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-xl text-primary hover:bg-secondary hover:text-white transition shadow-sm transform hover:-translate-y-1"
+							>
+								<Icon name="uil:envelope" />
+							</a>
+							<a
+								href="https://www.instagram.com/bengawanuvteam"
+								target="_blank"
+								class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-xl text-primary hover:bg-secondary hover:text-white transition shadow-sm transform hover:-translate-y-1"
+							>
+								<Icon name="uil:instagram" />
+							</a>
+							<a
+								href="https://www.youtube.com/@BengawanUVTeam"
+								target="_blank"
+								class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-xl text-primary hover:bg-secondary hover:text-white transition shadow-sm transform hover:-translate-y-1"
+							>
+								<Icon name="uil:youtube" />
+							</a>
+							<a
+								href="https://www.tiktok.com/@bengawanuvteam"
+								target="_blank"
+								class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-xl text-primary hover:bg-secondary hover:text-white transition shadow-sm transform hover:-translate-y-1"
+							>
+								<Icon name="ic:baseline-tiktok" />
+							</a>
+						</div>
 					</div>
 
 					<div>
@@ -209,7 +247,12 @@
 							</li>
 							<li>
 								<NuxtLink to="/research" class="hover:text-secondary transition"
-									>Research Papers</NuxtLink
+									>Technical Research</NuxtLink
+								>
+							</li>
+							<li>
+								<NuxtLink to="/blog" class="hover:text-secondary transition"
+									>Latest News</NuxtLink
 								>
 							</li>
 							<li>
@@ -228,13 +271,25 @@
 						</h3>
 						<ul class="space-y-3 text-sm text-surface-dim">
 							<li class="flex items-start gap-3">
-								<Icon name="uil:location-point" class="mt-1 text-secondary" />
-								<span>Surakarta, Central Java,<br />Indonesia</span>
+								<Icon
+									name="uil:location-point"
+									class="text-secondary text-xl flex-shrink-0 mt-1"
+								/>
+								<span class="leading-relaxed flex-1">
+									Gd. 1 Faculty of Engineering, Universitas Sebelas Maret, Jalan
+									Ir. Sutami No 36A, Kentingan, Kec. Jebres, Kota Surakarta,
+									Jawa Tengah, Indonesia 57126
+								</span>
 							</li>
 							<li class="flex items-center gap-3">
-								<Icon name="uil:envelope-alt" class="text-secondary" />
-								<a href="mailto:official@buv.uns.ac.id" class="hover:text-white"
-									>official@buv.uns.ac.id</a
+								<Icon
+									name="uil:envelope-alt"
+									class="text-secondary text-xl flex-shrink-0"
+								/>
+								<a
+									href="mailto:bengawanuv@unit.uns.ac.id"
+									class="hover:text-white"
+									>bengawanuv@unit.uns.ac.id</a
 								>
 							</li>
 						</ul>

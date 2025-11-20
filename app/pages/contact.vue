@@ -22,8 +22,9 @@
 								<div>
 									<p class="font-bold text-gray-900">Bengawan UV Workshop</p>
 									<p>
-										Gedung Porsima, Universitas Sebelas Maret,<br />Jl. Ir.
-										Sutami No.36, Surakarta 57126
+										Gd. 1 Faculty of Engineering, Universitas Sebelas Maret,
+										Jalan Ir. Sutami No 36A, Kentingan, Kec. Jebres, Kota
+										Surakarta, Jawa Tengah 57126
 									</p>
 								</div>
 							</div>
@@ -37,9 +38,9 @@
 								<div>
 									<p class="font-bold text-gray-900">Email Us</p>
 									<a
-										href="mailto:official@buvroboboatuns.com"
+										href="mailto:bengawanuv@unit.uns.ac.id"
 										class="hover:text-primary"
-										>official@buvroboboatuns.com</a
+										>bengawanuv@unit.uns.ac.id</a
 									>
 								</div>
 							</div>
@@ -64,20 +65,26 @@
 						</h3>
 						<div class="flex gap-4">
 							<a
-								href="#"
-								class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl text-primary hover:bg-secondary hover:text-white transition shadow-sm"
-								><Icon name="uil:instagram"
-							/></a>
+								href="https://www.instagram.com/bengawanuvteam"
+								target="_blank"
+								class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-xl text-primary hover:bg-secondary hover:text-white transition shadow-sm transform hover:-translate-y-1"
+							>
+								<Icon name="uil:instagram" />
+							</a>
 							<a
-								href="#"
-								class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl text-primary hover:bg-secondary hover:text-white transition shadow-sm"
-								><Icon name="uil:linkedin"
-							/></a>
+								href="https://www.youtube.com/@BengawanUVTeam"
+								target="_blank"
+								class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-xl text-primary hover:bg-secondary hover:text-white transition shadow-sm transform hover:-translate-y-1"
+							>
+								<Icon name="uil:youtube" />
+							</a>
 							<a
-								href="#"
-								class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl text-primary hover:bg-secondary hover:text-white transition shadow-sm"
-								><Icon name="uil:youtube"
-							/></a>
+								href="https://www.tiktok.com/@bengawanuvteam"
+								target="_blank"
+								class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-xl text-primary hover:bg-secondary hover:text-white transition shadow-sm transform hover:-translate-y-1"
+							>
+								<Icon name="ic:baseline-tiktok" />
+							</a>
 						</div>
 					</div>
 				</div>

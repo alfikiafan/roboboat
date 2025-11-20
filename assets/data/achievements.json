@@ -1,0 +1,34 @@
+[
+	{
+		"year": "2025",
+		"competition": "Roboboat International Competition",
+		"location": "Sarasota, Florida",
+		"rank": "5th Place",
+		"category": "Autonomous Surface Vehicle",
+		"description": "Successfully completed 4 autonomy missions. Awarded Best Propulsion Design."
+	},
+	{
+		"year": "2024",
+		"competition": "KKCTBN (National USV Contest)",
+		"location": "Indonesia",
+		"rank": "1st Place",
+		"category": "Fuel Engine Remote Control",
+		"description": "National Champion out of 40 universities. Fastest lap record holder."
+	},
+	{
+		"year": "2023",
+		"competition": "TechnoCorner UGM",
+		"location": "Yogyakarta",
+		"rank": "2nd Place",
+		"category": "IoT & Robotics Innovation",
+		"description": "Presented 'Mandakini 1.0' prototype for river debris cleaning system."
+	},
+	{
+		"year": "2022",
+		"competition": "Kontes Robot Indonesia",
+		"location": "Surabaya",
+		"rank": "Finalist",
+		"category": "SAR Division",
+		"description": "Top 8 finish in Search and Rescue robot category."
+	}
+]

@@ -19,22 +19,32 @@
 
 		<section class="py-16 bg-white border-b border-gray-100">
 			<div class="container mx-auto px-4">
-				<div class="grid md:grid-cols-2 gap-12 items-center">
-					<div>
-						<div
-							class="inline-block px-3 py-1 bg-surface text-primary text-xs font-bold uppercase tracking-widest rounded mb-4"
-						>
-							Competition Overview
+				<div class="grid md:grid-cols-3 gap-12 items-start">
+					<div class="md:col-span-2">
+						<div>
+							<div
+								class="inline-block px-3 py-1 bg-surface text-primary text-xs font-bold uppercase tracking-widest rounded mb-4"
+							>
+								Competition Overview
+							</div>
+							<h2 class="text-xl md:text-4xl font-bold text-primary-dark mb-6">
+								What is Roboboat?
+							</h2>
+							<div class="inline-block shadow-sm mb-3">
+								<img
+									src="/images/logo/roboboat-logo.webp"
+									alt="Roboboat Competition Logo"
+									class="h-24 md:h-32 w-auto object-contain"
+								/>
+							</div>
 						</div>
-						<h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-6">
-							What is Roboboat?
-						</h2>
+
 						<div class="prose text-gray-600 leading-relaxed">
 							<p class="mb-4">
 								<strong>RoboBoat</strong> is an international student
 								competition organized by
 								<a
-									href="https://roboboat.org/"
+									href="https://robonation.org/"
 									target="_blank"
 									class="text-secondary font-bold hover:underline"
 									>RoboNation</a
@@ -53,7 +63,7 @@
 					</div>
 
 					<div
-						class="bg-surface rounded-2xl p-8 shadow-sm border border-surface-dark relative overflow-hidden"
+						class="bg-surface rounded-2xl p-8 shadow-sm border border-surface-dark relative overflow-hidden h-full"
 					>
 						<Icon
 							name="uil:trophy"
@@ -66,14 +76,14 @@
 							<Icon name="uil:info-circle" /> Key Facts
 						</h3>
 
-						<ul class="space-y-4 text-sm">
+						<ul class="space-y-4">
 							<li
 								class="flex items-start gap-3 pb-4 border-b border-gray-300/50"
 							>
 								<div
-									class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-secondary shadow-sm flex-shrink-0"
+									class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-secondary shadow-sm flex-shrink-0"
 								>
-									<Icon name="uil:map-marker" />
+									<Icon name="uil:map-marker" class="text-xl" />
 								</div>
 								<div>
 									<p class="font-bold text-gray-900">Location</p>
@@ -87,9 +97,9 @@
 								class="flex items-start gap-3 pb-4 border-b border-gray-300/50"
 							>
 								<div
-									class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-secondary shadow-sm flex-shrink-0"
+									class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-secondary shadow-sm flex-shrink-0"
 								>
-									<Icon name="uil:calendar-alt" />
+									<Icon name="uil:calendar-alt" class="text-xl" />
 								</div>
 								<div>
 									<p class="font-bold text-gray-900">Event Date</p>
@@ -99,19 +109,26 @@
 
 							<li class="flex items-start gap-3">
 								<div
-									class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-secondary shadow-sm flex-shrink-0"
+									class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-secondary shadow-sm flex-shrink-0"
 								>
-									<Icon name="uil:ship" />
+									<Icon name="uil:ship" class="text-xl" />
 								</div>
 								<div>
-									<p class="font-bold text-gray-900">Challenge Focus</p>
-									<p class="text-gray-600">
-										Coastal surveillance, port security, and oceanographic
-										research tasks.
-									</p>
+									<p class="font-bold text-gray-900">Theme</p>
+									<p class="text-gray-600">Storm Response</p>
 								</div>
 							</li>
 						</ul>
+
+						<div class="mt-6 text-center">
+							<a
+								href="https://roboboat.org/"
+								target="_blank"
+								class="inline-block px-6 py-3 bg-secondary text-white font-bold rounded-lg hover:bg-secondary-light transition"
+							>
+								Visit RoboBoat Website
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -10,10 +10,10 @@
 
 				<div class="container mx-auto px-4 relative z-10">
 					<NuxtLink
-						to="/research"
+						to="/blog"
 						class="inline-flex items-center gap-2 text-secondary font-bold text-sm mb-6 hover:text-white transition"
 					>
-						<Icon name="uil:arrow-left" /> Back to Research
+						<Icon name="uil:arrow-left" /> Back to Blog Home
 					</NuxtLink>
 
 					<h1
@@ -145,8 +145,8 @@
 
 		<div v-else class="container mx-auto py-20 text-center">
 			<h1 class="text-4xl font-bold text-primary mb-4">Article Not Found</h1>
-			<NuxtLink to="/research" class="text-secondary underline"
-				>Back to Research</NuxtLink
+			<NuxtLink to="/blog" class="text-secondary underline"
+				>Back to Blog Home</NuxtLink
 			>
 		</div>
 	</div>

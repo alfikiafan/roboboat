@@ -1,0 +1,68 @@
+{
+	"supervisors": [
+		{
+			"name": "Prof. Dr. Eng. Handoko",
+			"role": "Chief Advisor",
+			"expertise": "Robotics & Mechatronics",
+			"image": "",
+			"linkedin": "#"
+		}
+	],
+	"core_team": [
+		{
+			"name": "Alfiki Diastama",
+			"role": "Team Leader",
+			"major": "Mechanical Engineering",
+			"image": "",
+			"linkedin": "#",
+			"instagram": "#"
+		},
+		{
+			"name": "Sarah Wijaya",
+			"role": "Technical Manager",
+			"major": "Electrical Engineering",
+			"image": "",
+			"linkedin": "#",
+			"instagram": "#"
+		}
+	],
+	"technical_team": [
+		{
+			"name": "Budi Santoso",
+			"role": "Programmer",
+			"division": "Computer Vision",
+			"image": "",
+			"linkedin": "#"
+		},
+		{
+			"name": "Citra Kirana",
+			"role": "Electronics",
+			"division": "Power System",
+			"image": "",
+			"linkedin": "#"
+		},
+		{
+			"name": "Dimas Anggara",
+			"role": "Mechanic",
+			"division": "Hull Design",
+			"image": "",
+			"linkedin": "#"
+		}
+	],
+	"non_technical": [
+		{
+			"name": "Eka Putri",
+			"role": "Sponsorship",
+			"major": "Management",
+			"image": "",
+			"linkedin": "#"
+		},
+		{
+			"name": "Fajar Nugraha",
+			"role": "Creative Media",
+			"major": "Visual Communication Design",
+			"image": "",
+			"linkedin": "#"
+		}
+	]
+}

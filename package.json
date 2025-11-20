@@ -1,0 +1,25 @@
+{
+  "name": "Roboboat",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.8.2",
+    "@nuxt/icon": "^2.1.0",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "better-sqlite3": "^12.4.1",
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.24",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@iconify-json/uil": "^1.2.3",
+    "@tailwindcss/typography": "^0.5.19"
+  }
+}

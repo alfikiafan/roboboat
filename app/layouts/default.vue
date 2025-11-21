@@ -9,7 +9,7 @@
 			"
 		>
 			<div class="container mx-auto px-4 flex items-center justify-between">
-				<NuxtLink to="/" class="flex items-center gap-2">
+				<NuxtLink to="/" class="flex items-center gap-2 shrink-0">
 					<img
 						src="/images/logo/bengawan-uv-red-logo.webp"
 						alt="Bengawan UV Logo"
@@ -18,7 +18,7 @@
 				</NuxtLink>
 
 				<nav
-					class="hidden lg:flex gap-8 text-sm font-bold text-gray-600 items-center"
+					class="hidden lg:flex gap-5 xl:gap-8 text-sm font-bold text-gray-600 items-center"
 				>
 					<NuxtLink
 						to="/"
@@ -33,53 +33,25 @@
 					<NuxtLink
 						to="/roboboat2026"
 						active-class="text-primary"
-						class="hover:text-primary transition relative group"
+						class="hover:text-primary transition relative group whitespace-nowrap"
 					>
 						Roboboat 2026
 						<span
 							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
 						></span>
 					</NuxtLink>
+
 					<NuxtLink
 						to="/boat"
 						active-class="text-primary"
-						class="hover:text-primary transition relative group"
+						class="hover:text-primary transition relative group whitespace-nowrap"
 					>
 						The Boat
 						<span
 							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
 						></span>
 					</NuxtLink>
-					<NuxtLink
-						to="/research"
-						active-class="text-primary"
-						class="hover:text-primary transition relative group"
-					>
-						Research
-						<span
-							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
-						></span>
-					</NuxtLink>
-					<NuxtLink
-						to="/papers"
-						active-class="text-primary"
-						class="hover:text-primary transition relative group"
-					>
-						Papers
-						<span
-							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
-						></span>
-					</NuxtLink>
-					<NuxtLink
-						to="/blog"
-						active-class="text-primary"
-						class="hover:text-primary transition relative group"
-					>
-						Blog
-						<span
-							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
-						></span>
-					</NuxtLink>
+
 					<NuxtLink
 						to="/profile"
 						active-class="text-primary"
@@ -91,9 +63,74 @@
 						></span>
 					</NuxtLink>
 
+					<div class="relative group">
+						<button
+							class="flex items-center gap-1 hover:text-primary transition py-4"
+						>
+							Research <Icon name="uil:angle-down" />
+						</button>
+						<div
+							class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-xl border border-gray-100 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2"
+						>
+							<NuxtLink
+								to="/research"
+								class="block px-4 py-3 hover:bg-gray-50 hover:text-primary transition border-b border-gray-50"
+							>
+								Research
+							</NuxtLink>
+							<NuxtLink
+								to="/papers"
+								class="block px-4 py-3 hover:bg-gray-50 hover:text-primary transition"
+							>
+								Papers
+							</NuxtLink>
+						</div>
+					</div>
+
+					<div class="relative group">
+						<button
+							class="flex items-center gap-1 hover:text-primary transition py-4"
+						>
+							Media Center <Icon name="uil:angle-down" />
+						</button>
+						<div
+							class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-xl border border-gray-100 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2"
+						>
+							<NuxtLink
+								to="/blog"
+								class="block px-4 py-3 hover:bg-gray-50 hover:text-primary transition border-b border-gray-50"
+							>
+								Blog & News
+							</NuxtLink>
+							<NuxtLink
+								to="/activities"
+								class="block px-4 py-3 hover:bg-gray-50 hover:text-primary transition"
+							>
+								Activities
+							</NuxtLink>
+							<NuxtLink
+								to="/gallery"
+								class="block px-4 py-3 hover:bg-gray-50 hover:text-primary transition border-b border-gray-50"
+							>
+								Gallery
+							</NuxtLink>
+						</div>
+					</div>
+
+					<NuxtLink
+						to="/sponsorships"
+						active-class="text-primary"
+						class="hover:text-primary transition relative group whitespace-nowrap"
+					>
+						Sponsorship
+						<span
+							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
+						></span>
+					</NuxtLink>
+
 					<NuxtLink
 						to="/contact"
-						class="px-5 py-2 bg-primary text-white rounded-full hover:bg-secondary transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+						class="px-5 py-2 bg-primary text-white rounded-full hover:bg-secondary transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 whitespace-nowrap ml-2"
 					>
 						Contact Us
 					</NuxtLink>
@@ -177,6 +214,24 @@
 							@click="isMobileOpen = false"
 							class="hover:text-primary py-2 border-b border-gray-50"
 							>Profile</NuxtLink
+						>
+						<NuxtLink
+							to="/gallery"
+							@click="isMobileOpen = false"
+							class="hover:text-primary py-2 border-b border-gray-50"
+							>Gallery</NuxtLink
+						>
+						<NuxtLink
+							to="/activities"
+							@click="isMobileOpen = false"
+							class="hover:text-primary py-2 border-b border-gray-50"
+							>Activities</NuxtLink
+						>
+						<NuxtLink
+							to="/sponsorships"
+							@click="isMobileOpen = false"
+							class="hover:text-primary py-2 border-b border-gray-50"
+							>Sponsorship</NuxtLink
 						>
 						<NuxtLink
 							to="/contact"
@@ -286,6 +341,18 @@
 							Contact
 						</h3>
 						<ul class="space-y-3 text-sm text-surface-dim">
+							<li>
+								<NuxtLink
+									to="/sponsorships"
+									class="flex items-start gap-3 hover:text-secondary transition font-semibold"
+								>
+									<Icon
+										name="uil:heart-sign"
+										class="text-secondary text-xl flex-shrink-0"
+									/>
+									Become a Sponsor
+								</NuxtLink>
+							</li>
 							<li class="flex items-start gap-3">
 								<Icon
 									name="uil:location-point"
@@ -315,7 +382,7 @@
 				<div
 					class="border-t border-gray-700 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-200"
 				>
-					<p>© 2026 Bengawan UV. All rights reserved.</p>
+					<p>© 2026 Bengawan UV Team UNS. All rights reserved.</p>
 					<div class="flex gap-4 mt-4 md:mt-0">
 						<a href="#" class="hover:text-white">Privacy Policy</a>
 						<a href="#" class="hover:text-white">Terms of Service</a>

@@ -34,7 +34,7 @@
 						class="absolute -inset-0.5 bg-gradient-to-r from-secondary to-primary rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"
 					></div>
 					<NuxtLink
-						to="/contact"
+						to="/sponsorships"
 						class="relative px-8 py-4 bg-primary rounded-full flex items-center gap-3 text-white font-bold border border-gray-100 hover:bg-primary-light transition-colors"
 					>
 						<Icon name="uil:heart-sign" class="text-xl text-white" />

@@ -13,6 +13,7 @@ export default defineContentConfig({
 					date: z.string().optional(),
 					title: z.string().optional(),
 					description: z.string().optional(),
+					location: z.string().optional(),
 				})
 				.passthrough(),
 		}),

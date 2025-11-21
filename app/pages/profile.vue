@@ -54,30 +54,72 @@
 			<AboutTimeline />
 		</section>
 
-		<section class="py-16 container mx-auto px-4">
-			<h2 class="text-3xl font-bold text-primary-dark mb-8 text-center">
-				Awards & Recognitions
-			</h2>
-			<div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-				<div
-					v-for="(item, index) in achievements"
-					:key="index"
-					class="flex gap-4 p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition"
+		<section class="py-20 bg-gray-50 relative overflow-hidden">
+			<div
+				class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
+			>
+				<Icon
+					name="uil:trophy"
+					class="absolute top-10 -left-10 text-[20rem] text-primary"
+				/>
+				<Icon
+					name="uil:award"
+					class="absolute bottom-10 -right-10 text-[20rem] text-secondary"
+				/>
+			</div>
+
+			<div class="container mx-auto px-4 relative z-10">
+				<h2
+					class="text-4xl font-extrabold text-primary-dark mb-12 text-center uppercase tracking-widest"
 				>
-					<div class="flex-shrink-0 w-16 text-center">
-						<span class="block text-2xl font-bold text-primary">{{
-							item.year
-						}}</span>
-						<div class="w-full h-1 bg-secondary mt-1 rounded"></div>
-					</div>
-					<div>
-						<h3 class="text-xl font-bold text-primary-dark">{{ item.rank }}</h3>
-						<p class="font-bold text-gray-600 text-sm">
-							{{ item.competition }}
-						</p>
-						<p class="text-xs text-gray-500 mt-1">
-							{{ item.location }} • {{ item.category }}
-						</p>
+					<span class="border-b-4 border-secondary pb-2">Hall of Fame</span>
+				</h2>
+
+				<div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+					<div
+						v-for="(item, index) in achievements"
+						:key="index"
+						class="group relative bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col"
+					>
+						<div
+							class="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-b from-primary to-secondary group-hover:w-3 transition-all"
+						></div>
+
+						<div class="relative z-10 pl-2">
+							<h3
+								class="text-xl md:text-2xl font-bold text-primary-dark leading-tight mb-2 group-hover:text-primary transition-colors"
+							>
+								{{ item.rank }}
+							</h3>
+
+							<div class="flex items-center flex-wrap gap-2 mb-4 text-sm">
+								<span
+									class="font-bold text-primary bg-primary/5 px-2 py-0.5 rounded"
+								>
+									{{ item.year }}
+								</span>
+								<span class="text-gray-300">|</span>
+								<span
+									class="font-bold text-secondary uppercase tracking-wide text-xs"
+								>
+									{{ item.competition }}
+								</span>
+							</div>
+
+							<div class="text-sm text-gray-600 leading-relaxed mb-4">
+								{{ item.description }}
+							</div>
+
+							<div
+								class="flex items-center gap-2 text-xs text-gray-400 font-medium border-t border-gray-50 pt-3 mt-auto"
+							>
+								<span class="flex items-center gap-1"
+									><Icon name="uil:map-marker" /> {{ item.location }}</span
+								>
+								<span>•</span>
+								<span>{{ item.category }}</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -131,6 +173,39 @@
 		</div>
 	</div>
 </template>
+
+<style scoped>
+.grid > div {
+	animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.grid > div:nth-child(1) {
+	animation-delay: 0.1s;
+}
+.grid > div:nth-child(2) {
+	animation-delay: 0.2s;
+}
+.grid > div:nth-child(3) {
+	animation-delay: 0.3s;
+}
+.grid > div:nth-child(4) {
+	animation-delay: 0.4s;
+}
+.grid > div:nth-child(5) {
+	animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+</style>
 
 <script setup lang="ts">
 import teamData from "../../assets/data/team.json";

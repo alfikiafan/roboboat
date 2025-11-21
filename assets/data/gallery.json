@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"year": "2025",
+		"src": "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=1000",
+		"caption": "Mandakini 3.0 Hull Integration Test"
+	},
+	{
+		"id": 2,
+		"year": "2025",
+		"src": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000",
+		"caption": "Electronics Division wiring the BMS"
+	},
+	{
+		"id": 3,
+		"year": "2025",
+		"src": "https://images.unsplash.com/photo-1602632270779-e1baa06074cc?q=80&w=1000",
+		"caption": "Pool Test: Obstacle Avoidance"
+	},
+	{
+		"id": 4,
+		"year": "2024",
+		"src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1000",
+		"caption": "Roboboat 2024 Competition Day"
+	},
+	{
+		"id": 5,
+		"year": "2024",
+		"src": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=1000",
+		"caption": "Team Presentation at Florida"
+	},
+	{
+		"id": 6,
+		"year": "2023",
+		"src": "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?q=80&w=1000",
+		"caption": "Mandakini 1.0 Launching Ceremony"
+	}
+]

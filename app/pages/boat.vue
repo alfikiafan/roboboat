@@ -5,7 +5,7 @@
 		>
 			<div class="absolute inset-0 z-0">
 				<img
-					src="https://plus.unsplash.com/premium_photo-1661964149725-fbf14e221433?q=80&w=1974"
+					src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/18/2022/04/types-of-boat-Bowrider-Sea-Ray-Sundancer-370.jpg"
 					alt="Mandakini 3.0"
 					class="w-full h-full object-cover opacity-80"
 				/>

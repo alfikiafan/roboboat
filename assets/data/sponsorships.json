@@ -1,0 +1,52 @@
+{
+	"packages": [
+		{
+			"name": "Bronze",
+			"price": "IDR 5-10 Juta",
+			"color": "border-orange-300",
+			"bg": "bg-orange-50",
+			"benefits": [
+				"Logo kecil di Website",
+				"Logo kecil di Banner Lomba",
+				"Social Media Shoutout (Story)",
+				"Sertifikat Apresiasi"
+			]
+		},
+		{
+			"name": "Silver",
+			"price": "IDR 10-25 Juta",
+			"color": "border-gray-300",
+			"bg": "bg-gray-50",
+			"benefits": [
+				"Logo sedang di Website & Boat",
+				"Logo sedang di Jersey Tim",
+				"Social Media Feed & Story",
+				"Product Review Video",
+				"Undangan Launching Kapal"
+			]
+		},
+		{
+			"name": "Gold",
+			"price": "> IDR 25 Juta",
+			"color": "border-yellow-400",
+			"bg": "bg-yellow-50",
+			"highlight": true,
+			"benefits": [
+				"Logo BESAR di Posisi Utama (Kapal & Jersey)",
+				"Exclusive Video Branding",
+				"Workshop / Talent Recruitment",
+				"Akses Data Riset Tim",
+				"VIP Access saat Lomba",
+				"Hak Eksklusif Publikasi"
+			]
+		}
+	],
+	"past_sponsors": [
+		"Pertamina",
+		"Bank Jateng",
+		"Telkom Indonesia",
+		"Wika",
+		"Len Industri",
+		"Pelindo"
+	]
+}

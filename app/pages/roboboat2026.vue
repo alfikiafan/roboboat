@@ -72,34 +72,43 @@
 			</div>
 		</section>
 
-		<section class="py-16 bg-surface">
+		<section class="py-20 bg-surface border-b border-surface-dark">
 			<div class="container mx-auto px-4">
-				<div class="text-center mb-12 max-w-4xl mx-auto">
+				<div class="text-center mb-16 max-w-4xl mx-auto">
 					<span
 						class="text-secondary font-bold tracking-widest uppercase text-xs mb-2 block"
-						>Competition Requirements</span
+						>Competition Category 1</span
 					>
-					<h2 class="text-3xl font-bold text-primary-dark mb-4">
-						What’s on Roboboat 2026?
+					<h2 class="text-4xl font-extrabold text-primary-dark mb-4">
+						Design Documentation
 					</h2>
-					<p class="text-gray-600">
-						Teams must submit a technical design report, team website, and team
-						introduction video before the event, then present their design
-						strategy and undergo an expert system review on-site.
+					<p class="text-gray-600 text-lg">
+						Before hitting the water, teams are evaluated on their engineering
+						process and communication skills through these documentation
+						submissions.
 					</p>
 				</div>
 
-				<div class="space-y-12 max-w-5xl mx-auto">
+				<div class="space-y-16 max-w-5xl mx-auto">
 					<div
-						class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-primary"
+						class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border-l-8 border-primary"
 					>
-						<h3 class="text-2xl font-bold text-primary mb-4">
-							Technical Design Report
-						</h3>
-						<p class="text-gray-700 mb-6 leading-relaxed">
+						<div class="flex items-center gap-4 mb-4">
+							<div
+								class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl"
+							>
+								<Icon name="uil:file-alt" />
+							</div>
+							<h3 class="text-2xl font-bold text-primary-dark">
+								Technical Design Report
+							</h3>
+						</div>
+						<p class="text-gray-700 mb-8 leading-relaxed text-lg">
 							The Technical Design Report (TDR) outlines the team’s design
 							principles and competition strategy, explaining the rationale
-							behind the selected autonomy challenge tasks.
+							behind the selected autonomy challenge tasks and how those choices
+							shaped key technical decisions across the hull, propulsion,
+							control, and autonomy systems.
 						</p>
 						<div
 							class="w-full h-96 bg-gray-100 rounded border border-gray-200 relative group"
@@ -120,26 +129,22 @@
 					</div>
 
 					<div
-						class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-secondary"
+						class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border-l-8 border-secondary"
 					>
-						<h3 class="text-2xl font-bold text-primary mb-4">Team Website</h3>
-						<p class="text-gray-700 leading-relaxed">
-							The Team Website is an online platform showcasing the team’s
-							identity and project. It contains team information, vessel photos
-							or videos, development documentation, design records, and a blog
-							tracking the vessel’s progress.
-						</p>
-					</div>
-
-					<div
-						class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-primary"
-					>
-						<h3 class="text-2xl font-bold text-primary mb-4">
-							Team Introduction Video
-						</h3>
-						<p class="text-gray-700 mb-6 leading-relaxed">
-							Team Introduction Video is a video created by the team to
-							introduce the team members and highlight the team’s personality.
+						<div class="flex items-center gap-4 mb-4">
+							<div
+								class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary text-2xl"
+							>
+								<Icon name="uil:video" />
+							</div>
+							<h3 class="text-2xl font-bold text-primary-dark">
+								Team Introduction Video
+							</h3>
+						</div>
+						<p class="text-gray-700 mb-8 leading-relaxed text-lg">
+							A video created by the team to introduce the team members and
+							highlight the team’s personality. The video represents our
+							distinctive characteristics and team spirit.
 						</p>
 						<div
 							class="aspect-video w-full bg-black rounded-lg overflow-hidden shadow-lg"
@@ -155,26 +160,33 @@
 
 					<div class="grid md:grid-cols-2 gap-8">
 						<div
-							class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-secondary h-full"
+							class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-primary"
 						>
-							<h3 class="text-xl font-bold text-primary mb-3">
-								Design Strategy Presentation
+							<h3
+								class="text-xl font-bold text-primary mb-3 flex items-center gap-2"
+							>
+								<Icon name="uil:globe" /> Team Website
 							</h3>
 							<p class="text-sm text-gray-700 leading-relaxed">
-								Design Strategy Presentation is a presentation prepared by the
-								team to explain their design strategy to the judges during the
-								onsite Roboboat competition.
+								An online platform showcasing the team’s identity, vessel
+								photos, development documentation, and blog. It serves as the
+								project’s first impression and must be visually appealing and
+								easy to navigate.
 							</p>
 						</div>
 						<div
-							class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-primary h-full"
+							class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-secondary"
 						>
-							<h3 class="text-xl font-bold text-primary mb-3">
-								System Assessment
+							<h3
+								class="text-xl font-bold text-primary mb-3 flex items-center gap-2"
+							>
+								<Icon name="uil:presentation-play" /> Design Strategy
+								Presentation
 							</h3>
 							<p class="text-sm text-gray-700 leading-relaxed">
-								Judges will inspect the team’s vehicle and assess technical
-								design, technical innovation, and craftsmanship of the design.
+								A presentation prepared for onsite judges to explain our design
+								strategy. This outlines the system design approach used to
+								address the challenges in the Autonomy Challenge.
 							</p>
 						</div>
 					</div>
@@ -182,26 +194,33 @@
 			</div>
 		</section>
 
-		<section class="py-16 bg-white">
+		<section class="py-20 bg-white">
 			<div class="container mx-auto px-4">
 				<div class="text-center mb-12">
-					<h2 class="text-3xl font-bold text-primary-dark mb-2">
+					<span
+						class="text-secondary font-bold tracking-widest uppercase text-xs mb-2 block"
+						>Competition Category 2</span
+					>
+					<h2 class="text-4xl font-extrabold text-primary-dark mb-4">
 						Autonomy Challenge
 					</h2>
-					<p class="text-gray-600 mb-6">
-						Explore the missions our ASV must conquer.
+					<p class="text-gray-600 text-lg">
+						The main event. Our ASV must demonstrate intelligence by completing
+						these missions autonomously.
 					</p>
-					<a
-						href="https://www.youtube.com/watch?v=example"
-						target="_blank"
-						class="inline-flex items-center gap-2 text-red-600 font-bold border border-red-100 bg-red-50 px-4 py-2 rounded-full hover:bg-red-100 transition"
-					>
-						<Icon name="uil:youtube" /> Watch Course Overview
-					</a>
+					<div class="mt-6">
+						<a
+							href="https://www.youtube.com/watch?v=example"
+							target="_blank"
+							class="inline-flex items-center gap-2 text-red-600 font-bold border border-red-100 bg-red-50 px-6 py-3 rounded-full hover:bg-red-100 transition"
+						>
+							<Icon name="uil:youtube" class="text-xl" /> Watch Course Overview
+						</a>
+					</div>
 				</div>
 
 				<ClientOnly fallback-tag="div" fallback="Loading Content...">
-					<div class="grid md:grid-cols-12 gap-12">
+					<div class="grid md:grid-cols-12 gap-12 mt-16">
 						<div class="md:col-span-4 lg:col-span-3">
 							<div
 								class="sticky top-24 bg-white rounded-xl shadow-md border border-surface-dark overflow-hidden"
@@ -219,19 +238,37 @@
 										class="text-left px-6 py-4 border-b border-gray-100 hover:bg-surface transition-colors flex items-center justify-between group"
 										:class="
 											activeTab === index
-												? 'bg-surface text-primary font-bold border-l-4 border-l-primary'
-												: 'text-gray-600 border-l-4 border-l-transparent'
+												? 'bg-surface border-l-4 border-l-primary'
+												: 'bg-white border-l-4 border-l-transparent'
 										"
 									>
-										Task {{ index + 1 }}
+										<div class="flex flex-col gap-2">
+											<span
+												class="w-fit font-bold text-primary bg-secondary/30 px-2 py-0.5 rounded text-[10px] uppercase tracking-wider"
+											>
+												Task {{ index + 1 }}
+											</span>
+
+											<span
+												class="font-bold text-sm leading-tight transition-colors"
+												:class="
+													activeTab === index
+														? 'text-primary-dark'
+														: 'text-gray-600 group-hover:text-primary'
+												"
+											>
+												{{ task.title }}
+											</span>
+										</div>
+
 										<Icon
 											name="uil:angle-right"
+											class="text-3xl transition-all duration-300"
 											:class="
 												activeTab === index
-													? 'opacity-100'
-													: 'opacity-0 group-hover:opacity-100'
+													? 'text-primary opacity-100 translate-x-0'
+													: 'text-gray-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0'
 											"
-											class="transition-opacity"
 										/>
 									</button>
 								</div>
@@ -244,24 +281,32 @@
 									v-if="activeTab === index"
 									class="bg-surface rounded-2xl border border-gray-200 p-8 animate-fade-in"
 								>
-									<div class="flex items-center gap-4 mb-4">
+									<div
+										class="flex items-center gap-4 mb-6 pb-6 border-b border-gray-200"
+									>
 										<div
-											class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg"
+											class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl flex-shrink-0"
 										>
 											{{ index + 1 }}
 										</div>
-										<h2
-											class="text-2xl md:text-3xl font-bold text-primary-dark"
-										>
-											{{ task.title }}
-										</h2>
+										<div>
+											<span
+												class="text-xs font-bold text-secondary uppercase tracking-widest"
+												>Autonomy Mission</span
+											>
+											<h2
+												class="text-3xl font-bold text-primary-dark leading-tight"
+											>
+												{{ task.title }}
+											</h2>
+										</div>
 									</div>
 
-									<p class="text-gray-700 text-lg leading-relaxed mb-8 pl-14">
+									<p class="text-gray-700 text-lg leading-relaxed mb-8">
 										{{ task.description }}
 									</p>
 
-									<div class="mb-8 pl-0 md:pl-14">
+									<div class="mb-8">
 										<h3
 											class="text-lg font-bold text-primary mb-4 flex items-center gap-2"
 										>
@@ -288,20 +333,20 @@
 									</div>
 
 									<div
-										class="bg-white rounded p-6 border border-gray-100 ml-0 md:ml-14"
+										class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm"
 									>
 										<p class="text-sm font-bold text-gray-500 uppercase mb-4">
 											Key Strategy:
 										</p>
-										<ul class="space-y-2">
+										<ul class="space-y-3">
 											<li
 												v-for="point in task.points"
 												:key="point"
-												class="flex items-start gap-2 text-gray-700"
+												class="flex items-start gap-3 text-gray-700"
 											>
 												<Icon
 													name="uil:check-circle"
-													class="text-secondary mt-1 flex-shrink-0"
+													class="text-secondary mt-1 flex-shrink-0 text-xl"
 												/>
 												<span>{{ point }}</span>
 											</li>
@@ -322,13 +367,13 @@ import { ref } from "vue";
 const activeTab = ref(0);
 const setTab = (index: number) => (activeTab.value = index);
 
-// UPDATED TASK DATA (WITH VIDEO & POINTS)
+// UPDATED TASK DATA
 const tasks = [
 	{
 		title: "Evacuation Route",
 		description:
 			"The ASV must travel safely through the designated entrance and exit gates, completing the route from start to finish without errors.",
-		video: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder Video
+		video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
 		points: [
 			"Precision Path Following",
 			"Gate Detection using Lidar",
@@ -339,7 +384,7 @@ const tasks = [
 		title: "Debris Clearance",
 		description:
 			"The ASV moves through a channel toward a debris area, identifying and scanning floating objects to locate potential hazards.",
-		video: "", // Kosongkan jika belum ada video
+		video: "",
 		points: [
 			"Object Classification (YOLO)",
 			"Stereo Vision Depth Estimation",

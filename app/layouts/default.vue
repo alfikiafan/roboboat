@@ -61,6 +61,16 @@
 						></span>
 					</NuxtLink>
 					<NuxtLink
+						to="/papers"
+						active-class="text-primary"
+						class="hover:text-primary transition relative group"
+					>
+						Papers
+						<span
+							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
+						></span>
+					</NuxtLink>
+					<NuxtLink
 						to="/blog"
 						active-class="text-primary"
 						class="hover:text-primary transition relative group"
@@ -149,6 +159,12 @@
 							@click="isMobileOpen = false"
 							class="hover:text-primary py-2 border-b border-gray-50"
 							>Research</NuxtLink
+						>
+						<NuxtLink
+							to="/papers"
+							@click="isMobileOpen = false"
+							class="hover:text-primary py-2 border-b border-gray-50"
+							>Papers</NuxtLink
 						>
 						<NuxtLink
 							to="/blog"

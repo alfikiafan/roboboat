@@ -238,38 +238,57 @@
 		</section>
 
 		<section class="py-20 bg-white">
-			<div class="container mx-auto px-4">
+			<div class="container mx-auto px-4 max-w-4xl">
 				<h2 class="text-3xl font-bold text-primary-dark mb-12 text-center">
 					Development Timeline
 				</h2>
 
-				<div class="relative">
+				<div
+					class="relative border-l-4 border-gray-200 ml-4 md:ml-6 pl-8 md:pl-12 space-y-12"
+				>
 					<div
-						class="absolute top-1/2 left-0 w-full h-1 bg-gray-200 -translate-y-1/2 hidden md:block"
-					></div>
-
-					<div class="grid md:grid-cols-4 gap-8 relative z-10">
+						v-for="(phase, index) in timeline"
+						:key="index"
+						class="relative group"
+					>
 						<div
-							v-for="(phase, index) in timeline"
-							:key="index"
-							class="group text-center"
+							class="absolute -left-[46px] md:-left-[62px] top-6 w-10 h-10 bg-secondary text-white rounded-full border-4 border-white shadow-md flex items-center justify-center font-bold text-sm group-hover:scale-110 transition-transform z-10"
 						>
-							<div
-								class="w-12 h-12 bg-white border-4 border-secondary text-secondary rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-lg group-hover:bg-secondary group-hover:text-white transition-colors"
-							>
-								{{ index + 1 }}
-							</div>
-							<div
-								class="bg-surface p-6 rounded-xl border border-gray-100 shadow-sm group-hover:-translate-y-2 transition-transform duration-300"
-							>
-								<span
-									class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2"
-									>{{ phase.date }}</span
-								>
-								<h3 class="text-lg font-bold text-primary-dark mb-2">
-									{{ phase.title }}
-								</h3>
-								<p class="text-sm text-gray-600">{{ phase.desc }}</p>
+							{{ index + 1 }}
+						</div>
+
+						<div
+							class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden relative"
+						>
+							<div class="md:flex">
+								<div class="md:w-1/3 h-48 md:h-auto relative overflow-hidden">
+									<img
+										:src="phase.image"
+										:alt="phase.title"
+										class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+									/>
+									<div
+										class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent md:bg-gradient-to-t md:from-black/50 md:to-transparent opacity-60"
+									></div>
+								</div>
+
+								<div class="p-6 md:w-2/3 flex flex-col justify-center relative">
+									<div
+										class="hidden md:block absolute top-8 -left-2 w-4 h-4 bg-white transform rotate-45 border-l border-b border-gray-100 z-10"
+									></div>
+
+									<span
+										class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2"
+									>
+										{{ phase.date }}
+									</span>
+									<h3 class="text-xl font-bold text-primary-dark mb-3">
+										{{ phase.title }}
+									</h3>
+									<p class="text-gray-600 text-sm leading-relaxed">
+										{{ phase.desc }}
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -347,22 +366,30 @@ const timeline = [
 	{
 		date: "Sep - Oct 2025",
 		title: "Design Phase",
-		desc: "Hull optimization CFD and electrical schematic design.",
+		desc: "Hull optimization utilizing CFD simulations and electrical schematic design for the new sensor array.",
+		image:
+			"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop",
 	},
 	{
 		date: "Nov - Dec 2025",
 		title: "Fabrication",
-		desc: "Carbon fiber molding and PCB manufacturing.",
+		desc: "Carbon fiber molding process for the main hull and manufacturing of custom PCB for the BMS.",
+		image:
+			"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop",
 	},
 	{
 		date: "Jan - Feb 2026",
 		title: "Integration",
-		desc: "System assembly and initial pool testing.",
+		desc: "System assembly, sensor mounting, and initial buoyancy testing in the campus pool.",
+		image:
+			"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop",
 	},
 	{
 		date: "Feb - Mar 2026",
 		title: "Sea Trials",
-		desc: "Autonomous mission simulation and fine-tuning.",
+		desc: "Intensive autonomous mission simulation and PID tuning at the local lake reservoir.",
+		image:
+			"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop",
 	},
 ];
 </script>

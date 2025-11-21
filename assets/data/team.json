@@ -6,9 +6,16 @@
 			"research_area": "Robotics & Mechatronics Control",
 			"email": "handoko@ft.uns.ac.id",
 			"image": ""
+		},
+		{
+			"name": "Dr. Tech. Suyanto",
+			"role": "Technical Advisor",
+			"research_area": "Artificial Intelligence",
+			"email": "suyanto@ft.uns.ac.id",
+			"image": ""
 		}
 	],
-	"team_2026": [
+	"team_leader": [
 		{
 			"name": "Alfiki Diastama",
 			"role": "Team Leader",
@@ -18,7 +25,9 @@
 			"instagram": "https://instagram.com",
 			"linkedin": "https://linkedin.com",
 			"image": ""
-		},
+		}
+	],
+	"technical_team": [
 		{
 			"name": "Sarah Wijaya",
 			"role": "Technical Manager",
@@ -40,11 +49,33 @@
 			"image": ""
 		},
 		{
+			"name": "Dimas Anggara",
+			"role": "Mechanical Engineer",
+			"major": "Mechanical Engineering",
+			"research_area": "Hull Fabrication",
+			"email": "dimas@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
+		}
+	],
+	"non_technical_team": [
+		{
 			"name": "Eka Putri",
-			"role": "Sponsorship",
+			"role": "General Manager",
 			"major": "Management",
 			"research_area": "Business Funding",
 			"email": "eka@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
+		},
+		{
+			"name": "Fajar Nugraha",
+			"role": "Creative Media",
+			"major": "Visual Communication Design",
+			"research_area": "Branding Strategy",
+			"email": "fajar@student.uns.ac.id",
 			"instagram": "#",
 			"linkedin": "#",
 			"image": ""

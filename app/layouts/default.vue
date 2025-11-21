@@ -18,7 +18,7 @@
 				</NuxtLink>
 
 				<nav
-					class="hidden lg:flex gap-5 xl:gap-8 text-sm font-bold text-gray-600 items-center"
+					class="hidden lg:flex gap-6 xl:gap-10 text-sm font-bold text-gray-600 items-center"
 				>
 					<NuxtLink
 						to="/"
@@ -30,6 +30,44 @@
 							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
 						></span>
 					</NuxtLink>
+					<div class="relative group">
+						<NuxtLink
+							to="/profile"
+							class="flex items-center gap-1 hover:text-primary transition py-4"
+							active-class="text-primary"
+						>
+							Profile <Icon name="uil:angle-down" />
+						</NuxtLink>
+
+						<div
+							class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-xl border border-gray-100 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2"
+						>
+							<NuxtLink
+								to="/profile"
+								class="block px-4 py-3 hover:bg-gray-50 hover:text-primary transition border-b border-gray-50"
+							>
+								General
+							</NuxtLink>
+							<NuxtLink
+								:to="{ path: '/profile', hash: '#supervisor' }"
+								class="block px-4 py-3 hover:bg-gray-50 hover:text-primary transition border-b border-gray-50"
+							>
+								Supervisor
+							</NuxtLink>
+							<NuxtLink
+								:to="{ path: '/profile', hash: '#team2026' }"
+								class="block px-4 py-3 hover:bg-gray-50 hover:text-primary transition border-b border-gray-50"
+							>
+								2026 Team's
+							</NuxtLink>
+							<NuxtLink
+								:to="{ path: '/profile', hash: '#past-teams' }"
+								class="block px-4 py-3 hover:bg-gray-50 hover:text-primary transition"
+							>
+								Past Teams
+							</NuxtLink>
+						</div>
+					</div>
 					<NuxtLink
 						to="/roboboat2026"
 						active-class="text-primary"
@@ -47,17 +85,6 @@
 						class="hover:text-primary transition relative group whitespace-nowrap"
 					>
 						The Boat
-						<span
-							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
-						></span>
-					</NuxtLink>
-
-					<NuxtLink
-						to="/profile"
-						active-class="text-primary"
-						class="hover:text-primary transition relative group"
-					>
-						Profile
 						<span
 							class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"
 						></span>
@@ -180,6 +207,12 @@
 							>Home</NuxtLink
 						>
 						<NuxtLink
+							to="/profile"
+							@click="isMobileOpen = false"
+							class="hover:text-primary py-2 border-b border-gray-50"
+							>Profile</NuxtLink
+						>
+						<NuxtLink
 							to="/roboboat2026"
 							@click="isMobileOpen = false"
 							class="hover:text-primary py-2 border-b border-gray-50"
@@ -208,12 +241,6 @@
 							@click="isMobileOpen = false"
 							class="hover:text-primary py-2 border-b border-gray-50"
 							>Blog</NuxtLink
-						>
-						<NuxtLink
-							to="/profile"
-							@click="isMobileOpen = false"
-							class="hover:text-primary py-2 border-b border-gray-50"
-							>Profile</NuxtLink
 						>
 						<NuxtLink
 							to="/gallery"
@@ -338,42 +365,52 @@
 						<h3
 							class="text-lg font-bold mb-6 border-b border-secondary/30 pb-2 inline-block"
 						>
-							Contact
+							Partnership
 						</h3>
-						<ul class="space-y-3 text-sm text-surface-dim">
+
+						<ul class="space-y-4 text-sm text-surface-dim">
 							<li>
 								<NuxtLink
 									to="/sponsorships"
-									class="flex items-start gap-3 hover:text-secondary transition font-semibold"
+									class="flex items-center gap-3 hover:text-secondary transition font-semibold group"
 								>
-									<Icon
-										name="uil:heart-sign"
-										class="text-secondary text-xl flex-shrink-0"
-									/>
-									Become a Sponsor
+									<div class="w-6 flex justify-center flex-shrink-0">
+										<Icon
+											name="uil:heart-sign"
+											class="text-secondary text-xl group-hover:scale-110 transition-transform"
+										/>
+									</div>
+									<span>Become a Sponsor</span>
 								</NuxtLink>
 							</li>
+
 							<li class="flex items-start gap-3">
-								<Icon
-									name="uil:location-point"
-									class="text-secondary text-xl flex-shrink-0 mt-1"
-								/>
+								<div class="w-6 flex justify-center flex-shrink-0 mt-1">
+									<Icon
+										name="uil:location-point"
+										class="text-secondary text-xl"
+									/>
+								</div>
 								<span class="leading-relaxed flex-1">
 									Gd. 1 Faculty of Engineering, Universitas Sebelas Maret, Jalan
 									Ir. Sutami No 36A, Kentingan, Kec. Jebres, Kota Surakarta,
 									Jawa Tengah, Indonesia 57126
 								</span>
 							</li>
+
 							<li class="flex items-center gap-3">
-								<Icon
-									name="uil:envelope-alt"
-									class="text-secondary text-xl flex-shrink-0"
-								/>
+								<div class="w-6 flex justify-center flex-shrink-0">
+									<Icon
+										name="uil:envelope-alt"
+										class="text-secondary text-xl"
+									/>
+								</div>
 								<a
 									href="mailto:bengawanuv@unit.uns.ac.id"
-									class="hover:text-white"
-									>bengawanuv@unit.uns.ac.id</a
+									class="hover:text-white flex-1 break-all"
 								>
+									bengawanuv@unit.uns.ac.id
+								</a>
 							</li>
 						</ul>
 					</div>

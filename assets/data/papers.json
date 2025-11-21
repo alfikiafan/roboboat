@@ -1,32 +1,37 @@
 [
 	{
 		"year": "2025",
-		"title": "Bengawan UV Team’s Technical Design Report",
-		"competition": "Roboboat 2025",
-		"link": "https://pdfobject.com/pdf/sample.pdf"
+		"boat_name": "Mandakini Zenith",
+		"competition": "Roboboat 2025 (Sarasota, USA)",
+		"link": "https://pdfobject.com/pdf/sample.pdf",
+		"image": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000"
 	},
 	{
 		"year": "2024",
-		"title": "Bengawan UV Team’s Technical Design Report",
-		"competition": "Roboboat 2024",
-		"link": "https://pdfobject.com/pdf/sample.pdf"
+		"boat_name": "Mandakini Hydra",
+		"competition": "Roboboat 2024 (Sarasota, USA)",
+		"link": "https://pdfobject.com/pdf/sample.pdf",
+		"image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=400&auto=format&fit=crop"
 	},
 	{
 		"year": "2023",
-		"title": "Bengawan UV Team’s Technical Design Report",
-		"competition": "Roboboat 2023",
-		"link": "https://pdfobject.com/pdf/sample.pdf"
+		"boat_name": "Mandakini Catra",
+		"competition": "Roboboat 2023 (Sarasota, USA)",
+		"link": "https://pdfobject.com/pdf/sample.pdf",
+		"image": "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?q=80&w=400&auto=format&fit=crop"
 	},
 	{
 		"year": "2022",
-		"title": "Bengawan UV Team’s Technical Design Report",
-		"competition": "Roboboat 2022",
-		"link": "https://pdfobject.com/pdf/sample.pdf"
+		"boat_name": "Mandakini Evo",
+		"competition": "Roboboat 2022 (Sarasota, USA)",
+		"link": "https://pdfobject.com/pdf/sample.pdf",
+		"image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=400&auto=format&fit=crop"
 	},
 	{
 		"year": "2021",
-		"title": "Bengawan UV Team’s Technical Design Report",
-		"competition": "Roboboat 2021",
-		"link": "https://pdfobject.com/pdf/sample.pdf"
+		"boat_name": "Mandakini Neo",
+		"competition": "Roboboat 2021 (Online Submission)",
+		"link": "https://pdfobject.com/pdf/sample.pdf",
+		"image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=400&auto=format&fit=crop"
 	}
 ]

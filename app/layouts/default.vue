@@ -11,7 +11,7 @@
 			<div class="container mx-auto px-4 flex items-center justify-between">
 				<NuxtLink to="/" class="flex items-center gap-2">
 					<img
-						src="/images/logo/bengawan-uv-logo.webp"
+						src="/images/logo/bengawan-uv-red-logo.webp"
 						alt="Bengawan UV Logo"
 						class="h-14"
 					/>

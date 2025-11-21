@@ -88,7 +88,7 @@
 		>
 			<section>
 				<div class="flex items-center gap-4 mb-8">
-					<h2 class="text-3xl font-bold text-primary-dark">Advisors</h2>
+					<h2 class="text-3xl font-bold text-primary-dark">Supervisors</h2>
 					<div class="h-1 flex-grow bg-surface-dark rounded"></div>
 				</div>
 				<div class="grid md:grid-cols-4 gap-8 justify-center">
@@ -102,12 +102,12 @@
 
 			<section>
 				<div class="flex items-center gap-4 mb-8">
-					<h2 class="text-3xl font-bold text-primary-dark">2026 Core Team</h2>
+					<h2 class="text-3xl font-bold text-primary-dark">2026 Team</h2>
 					<div class="h-1 flex-grow bg-surface-dark rounded"></div>
 				</div>
-				<div class="grid md:grid-cols-4 gap-8">
+				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 					<TeamMemberCard
-						v-for="member in teamData.core_team"
+						v-for="member in teamData.team_2026"
 						:key="member.name"
 						v-bind="member"
 					/>
@@ -116,56 +116,19 @@
 
 			<section>
 				<div class="flex items-center gap-4 mb-8">
-					<h2 class="text-3xl font-bold text-primary-dark">
-						Technical Division
-					</h2>
+					<h2 class="text-3xl font-bold text-primary-dark">Past Team</h2>
 					<div class="h-1 flex-grow bg-surface-dark rounded"></div>
 				</div>
-				<div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+				<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
 					<TeamMemberCard
-						v-for="member in teamData.technical_team"
+						v-for="member in teamData.past_team"
 						:key="member.name"
 						v-bind="member"
-					/>
-				</div>
-			</section>
-
-			<section>
-				<div class="flex items-center gap-4 mb-8">
-					<h2 class="text-3xl font-bold text-primary-dark">
-						Non-Technical Division
-					</h2>
-					<div class="h-1 flex-grow bg-surface-dark rounded"></div>
-				</div>
-				<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-					<TeamMemberCard
-						v-for="member in teamData.non_technical"
-						:key="member.name"
-						v-bind="member"
+						:role="member.year"
 					/>
 				</div>
 			</section>
 		</div>
-
-		<section class="py-16 bg-gray-50 border-t border-gray-200">
-			<div class="container mx-auto px-4 text-center">
-				<h2 class="text-2xl font-bold text-primary-dark mb-6">
-					Past Team Leads & Contributors
-				</h2>
-				<div class="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
-					<span
-						v-for="i in 10"
-						:key="i"
-						class="px-4 py-2 bg-white rounded-full shadow-sm text-gray-600 text-sm border border-gray-200"
-					>
-						Alumni Name {{ i }} (202{{ i % 5 }})
-					</span>
-				</div>
-				<p class="mt-6 text-xs text-gray-500">
-					And many others who have contributed to our journey.
-				</p>
-			</div>
-		</section>
 	</div>
 </template>
 

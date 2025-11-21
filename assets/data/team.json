@@ -3,66 +3,68 @@
 		{
 			"name": "Prof. Dr. Eng. Handoko",
 			"role": "Chief Advisor",
-			"expertise": "Robotics & Mechatronics",
-			"image": "",
-			"linkedin": "#"
+			"research_area": "Robotics & Mechatronics Control",
+			"email": "handoko@ft.uns.ac.id",
+			"image": ""
 		}
 	],
-	"core_team": [
+	"team_2026": [
 		{
 			"name": "Alfiki Diastama",
 			"role": "Team Leader",
 			"major": "Mechanical Engineering",
-			"image": "",
-			"linkedin": "#",
-			"instagram": "#"
+			"research_area": "Unmanned System Design",
+			"email": "alfiki@student.uns.ac.id",
+			"instagram": "https://instagram.com",
+			"linkedin": "https://linkedin.com",
+			"image": ""
 		},
 		{
 			"name": "Sarah Wijaya",
 			"role": "Technical Manager",
 			"major": "Electrical Engineering",
-			"image": "",
+			"research_area": "Power Management System",
+			"email": "sarah@student.uns.ac.id",
+			"instagram": "#",
 			"linkedin": "#",
-			"instagram": "#"
-		}
-	],
-	"technical_team": [
+			"image": ""
+		},
 		{
 			"name": "Budi Santoso",
 			"role": "Programmer",
-			"division": "Computer Vision",
-			"image": "",
-			"linkedin": "#"
+			"major": "Informatics",
+			"research_area": "Computer Vision & AI",
+			"email": "budi@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
 		},
-		{
-			"name": "Citra Kirana",
-			"role": "Electronics",
-			"division": "Power System",
-			"image": "",
-			"linkedin": "#"
-		},
-		{
-			"name": "Dimas Anggara",
-			"role": "Mechanic",
-			"division": "Hull Design",
-			"image": "",
-			"linkedin": "#"
-		}
-	],
-	"non_technical": [
 		{
 			"name": "Eka Putri",
 			"role": "Sponsorship",
 			"major": "Management",
-			"image": "",
-			"linkedin": "#"
+			"research_area": "Business Funding",
+			"email": "eka@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
+		}
+	],
+	"past_team": [
+		{
+			"name": "Alumni 2025",
+			"year": "Roboboat 2025",
+			"image": ""
 		},
 		{
-			"name": "Fajar Nugraha",
-			"role": "Creative Media",
-			"major": "Visual Communication Design",
-			"image": "",
-			"linkedin": "#"
+			"name": "Alumni 2024",
+			"year": "Roboboat 2024",
+			"image": ""
+		},
+		{
+			"name": "Alumni 2023",
+			"year": "Roboboat 2023",
+			"image": ""
 		}
 	]
 }

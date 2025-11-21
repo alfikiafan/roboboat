@@ -1,148 +1,203 @@
 <template>
 	<div>
-		<section class="bg-primary text-surface py-20">
+		<section class="bg-primary text-surface pt-20 pb-16">
 			<div class="container mx-auto px-4 text-center">
-				<h1 class="text-4xl md:text-6xl font-bold mb-6">Roboboat 2026</h1>
-				<p class="text-xl text-surface-dim max-w-2xl mx-auto mb-8">
+				<h1 class="text-4xl md:text-6xl font-bold mb-6">ROBOBOAT 2026</h1>
+
+				<div class="flex flex-wrap justify-center gap-4 mb-8">
+					<div
+						class="px-4 py-2 bg-white/10 backdrop-blur rounded-full border border-white/20 flex items-center gap-2 text-sm font-medium"
+					>
+						<Icon name="uil:map-marker" class="text-secondary text-lg" />
+						Sarasota, Florida
+					</div>
+					<div
+						class="px-4 py-2 bg-white/10 backdrop-blur rounded-full border border-white/20 flex items-center gap-2 text-sm font-medium"
+					>
+						<Icon name="uil:calendar-alt" class="text-secondary text-lg" />
+						March 2026
+					</div>
+					<div
+						class="px-4 py-2 bg-white/10 backdrop-blur rounded-full border border-white/20 flex items-center gap-2 text-sm font-medium"
+					>
+						<Icon name="uil:ship" class="text-secondary text-lg" /> Storm
+						Response
+					</div>
+				</div>
+
+				<p class="text-xl text-surface-dim max-w-2xl mx-auto">
 					Documentation of our autonomous strategies and technical design for
 					the world's premier ASV competition.
 				</p>
-				<a
-					href="#"
-					class="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-white font-bold rounded-lg hover:bg-secondary-light transition shadow-lg"
-				>
-					<Icon name="uil:file-download-alt" class="text-2xl" />
-					Download Technical Design Report
-				</a>
 			</div>
 		</section>
 
 		<section class="py-16 bg-white border-b border-gray-100">
 			<div class="container mx-auto px-4">
-				<div class="grid md:grid-cols-3 gap-12 items-start">
-					<div class="md:col-span-2">
-						<div>
-							<div
-								class="inline-block px-3 py-1 bg-surface text-primary text-xs font-bold uppercase tracking-widest rounded mb-4"
-							>
-								Competition Overview
-							</div>
-							<h2 class="text-xl md:text-4xl font-bold text-primary-dark mb-6">
-								What is Roboboat?
-							</h2>
-							<div class="inline-block shadow-sm mb-3">
-								<img
-									src="/images/logo/roboboat-logo.webp"
-									alt="Roboboat Competition Logo"
-									class="h-24 md:h-32 w-auto object-contain"
-								/>
-							</div>
-						</div>
-
-						<div class="prose text-gray-600 leading-relaxed">
-							<p class="mb-4">
-								<strong>RoboBoat</strong> is an international student
-								competition organized by
-								<a
-									href="https://robonation.org/"
-									target="_blank"
-									class="text-secondary font-bold hover:underline"
-									>RoboNation</a
-								>. Teams from around the world design and build Autonomous
-								Surface Vehicles (ASVs) to tackle real-world maritime
-								challenges.
+				<div class="grid md:grid-cols-12 gap-12 items-center">
+					<div class="md:col-span-4 flex justify-center">
+						<img
+							src="/images/logo/roboboat-logo.webp"
+							alt="Roboboat Logo"
+							class="w-full max-w-[250px] object-contain"
+						/>
+					</div>
+					<div class="md:col-span-8">
+						<h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-6">
+							What is Roboboat?
+						</h2>
+						<div class="prose text-gray-600 leading-relaxed mb-6">
+							<p>
+								RoboBoat is an international student program established to
+								generate, cultivate, and enhance a community of innovators
+								capable of making substantive contributions to the Autonomous
+								Surface Vehicle (ASV) domain.
 							</p>
 							<p>
-								The competition tests the student's ability to engineer a
-								robotic boat that can navigate autonomously through a course
-								marked by buoys, avoid obstacles, and perform complex tasks such
-								as docking, object delivery, and acoustic localization without
-								human intervention.
+								The vision is achieved by providing a venue and mechanism
+								whereby practitioners of robotics and maritime autonomy come
+								together at RoboBoat to share knowledge, innovate, and
+								collaboratively advance the technology of ASV systems.
 							</p>
+						</div>
+						<a
+							href="https://roboboat.org/"
+							target="_blank"
+							class="inline-flex items-center gap-2 text-secondary font-bold hover:underline text-lg"
+						>
+							Visit Official Website <Icon name="uil:external-link-alt" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-16 bg-surface">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-12 max-w-4xl mx-auto">
+					<span
+						class="text-secondary font-bold tracking-widest uppercase text-xs mb-2 block"
+						>Competition Requirements</span
+					>
+					<h2 class="text-3xl font-bold text-primary-dark mb-4">
+						What’s on Roboboat 2026?
+					</h2>
+					<p class="text-gray-600">
+						Teams must submit a technical design report, team website, and team
+						introduction video before the event, then present their design
+						strategy and undergo an expert system review on-site.
+					</p>
+				</div>
+
+				<div class="space-y-12 max-w-5xl mx-auto">
+					<div
+						class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-primary"
+					>
+						<h3 class="text-2xl font-bold text-primary mb-4">
+							Technical Design Report
+						</h3>
+						<p class="text-gray-700 mb-6 leading-relaxed">
+							The Technical Design Report (TDR) outlines the team’s design
+							principles and competition strategy, explaining the rationale
+							behind the selected autonomy challenge tasks.
+						</p>
+						<div
+							class="w-full h-96 bg-gray-100 rounded border border-gray-200 relative group"
+						>
+							<iframe
+								src="https://pdfobject.com/pdf/sample.pdf"
+								class="w-full h-full"
+								title="TDR Preview"
+							></iframe>
+							<a
+								href="https://pdfobject.com/pdf/sample.pdf"
+								target="_blank"
+								class="absolute bottom-4 right-4 px-4 py-2 bg-primary text-white text-sm font-bold rounded hover:bg-secondary transition shadow-lg flex items-center gap-2"
+							>
+								<Icon name="uil:file-download" /> Download PDF
+							</a>
 						</div>
 					</div>
 
 					<div
-						class="bg-surface rounded-2xl p-8 shadow-sm border border-surface-dark relative overflow-hidden h-full"
+						class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-secondary"
 					>
-						<Icon
-							name="uil:trophy"
-							class="absolute -right-6 -bottom-6 text-9xl text-primary opacity-5"
-						/>
+						<h3 class="text-2xl font-bold text-primary mb-4">Team Website</h3>
+						<p class="text-gray-700 leading-relaxed">
+							The Team Website is an online platform showcasing the team’s
+							identity and project. It contains team information, vessel photos
+							or videos, development documentation, design records, and a blog
+							tracking the vessel’s progress.
+						</p>
+					</div>
 
-						<h3
-							class="text-xl font-bold text-primary mb-6 flex items-center gap-2"
-						>
-							<Icon name="uil:info-circle" /> Key Facts
+					<div
+						class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-primary"
+					>
+						<h3 class="text-2xl font-bold text-primary mb-4">
+							Team Introduction Video
 						</h3>
+						<p class="text-gray-700 mb-6 leading-relaxed">
+							Team Introduction Video is a video created by the team to
+							introduce the team members and highlight the team’s personality.
+						</p>
+						<div
+							class="aspect-video w-full bg-black rounded-lg overflow-hidden shadow-lg"
+						>
+							<iframe
+								class="w-full h-full"
+								src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+								frameborder="0"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
 
-						<ul class="space-y-4">
-							<li
-								class="flex items-start gap-3 pb-4 border-b border-gray-300/50"
-							>
-								<div
-									class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-secondary shadow-sm flex-shrink-0"
-								>
-									<Icon name="uil:map-marker" class="text-xl" />
-								</div>
-								<div>
-									<p class="font-bold text-gray-900">Location</p>
-									<p class="text-gray-600">
-										Nathan Benderson Park, Sarasota, Florida, USA
-									</p>
-								</div>
-							</li>
-
-							<li
-								class="flex items-start gap-3 pb-4 border-b border-gray-300/50"
-							>
-								<div
-									class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-secondary shadow-sm flex-shrink-0"
-								>
-									<Icon name="uil:calendar-alt" class="text-xl" />
-								</div>
-								<div>
-									<p class="font-bold text-gray-900">Event Date</p>
-									<p class="text-gray-600">February 19-24, 2026</p>
-								</div>
-							</li>
-
-							<li class="flex items-start gap-3">
-								<div
-									class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-secondary shadow-sm flex-shrink-0"
-								>
-									<Icon name="uil:ship" class="text-xl" />
-								</div>
-								<div>
-									<p class="font-bold text-gray-900">Theme</p>
-									<p class="text-gray-600">Storm Response</p>
-								</div>
-							</li>
-						</ul>
-
-						<div class="mt-6 text-center">
-							<a
-								href="https://roboboat.org/"
-								target="_blank"
-								class="inline-block px-6 py-3 bg-secondary text-white font-bold rounded-lg hover:bg-secondary-light transition"
-							>
-								Visit RoboBoat Website
-							</a>
+					<div class="grid md:grid-cols-2 gap-8">
+						<div
+							class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-secondary h-full"
+						>
+							<h3 class="text-xl font-bold text-primary mb-3">
+								Design Strategy Presentation
+							</h3>
+							<p class="text-sm text-gray-700 leading-relaxed">
+								Design Strategy Presentation is a presentation prepared by the
+								team to explain their design strategy to the judges during the
+								onsite Roboboat competition.
+							</p>
+						</div>
+						<div
+							class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-primary h-full"
+						>
+							<h3 class="text-xl font-bold text-primary mb-3">
+								System Assessment
+							</h3>
+							<p class="text-sm text-gray-700 leading-relaxed">
+								Judges will inspect the team’s vehicle and assess technical
+								design, technical innovation, and craftsmanship of the design.
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="py-16 bg-gray-50">
+		<section class="py-16 bg-white">
 			<div class="container mx-auto px-4">
 				<div class="text-center mb-12">
 					<h2 class="text-3xl font-bold text-primary-dark mb-2">
 						Autonomy Challenge
 					</h2>
-					<p class="text-gray-600">
-						Explore our technical approach for each competition task below.
+					<p class="text-gray-600 mb-6">
+						Explore the missions our ASV must conquer.
 					</p>
+					<a
+						href="https://www.youtube.com/watch?v=example"
+						target="_blank"
+						class="inline-flex items-center gap-2 text-red-600 font-bold border border-red-100 bg-red-50 px-4 py-2 rounded-full hover:bg-red-100 transition"
+					>
+						<Icon name="uil:youtube" /> Watch Course Overview
+					</a>
 				</div>
 
 				<ClientOnly fallback-tag="div" fallback="Loading Content...">
@@ -154,7 +209,7 @@
 								<div
 									class="p-4 bg-primary-dark text-surface font-bold uppercase tracking-wider text-sm"
 								>
-									Competition Tasks
+									Mission Tasks
 								</div>
 								<div class="flex flex-col">
 									<button
@@ -168,7 +223,7 @@
 												: 'text-gray-600 border-l-4 border-l-transparent'
 										"
 									>
-										{{ task.title }}
+										Task {{ index + 1 }}
 										<Icon
 											name="uil:angle-right"
 											:class="
@@ -187,37 +242,33 @@
 							<div v-for="(task, index) in tasks" :key="task.title">
 								<div
 									v-if="activeTab === index"
-									class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 animate-fade-in"
+									class="bg-surface rounded-2xl border border-gray-200 p-8 animate-fade-in"
 								>
-									<div class="flex items-start justify-between mb-6">
-										<div>
-											<span
-												class="text-secondary font-bold text-sm uppercase tracking-widest mb-2 block"
-												>Task Detail</span
-											>
-											<h2 class="text-3xl font-bold text-primary-dark">
-												{{ task.title }}
-											</h2>
-										</div>
+									<div class="flex items-center gap-4 mb-4">
 										<div
-											class="w-12 h-12 bg-surface rounded-full flex items-center justify-center text-primary text-2xl font-bold"
+											class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg"
 										>
 											{{ index + 1 }}
 										</div>
+										<h2
+											class="text-2xl md:text-3xl font-bold text-primary-dark"
+										>
+											{{ task.title }}
+										</h2>
 									</div>
 
-									<p class="text-gray-700 text-lg leading-relaxed mb-8">
+									<p class="text-gray-700 text-lg leading-relaxed mb-8 pl-14">
 										{{ task.description }}
 									</p>
 
-									<div class="mb-8">
+									<div class="mb-8 pl-0 md:pl-14">
 										<h3
 											class="text-lg font-bold text-primary mb-4 flex items-center gap-2"
 										>
 											<Icon name="uil:video" /> Strategy Simulation
 										</h3>
 										<div
-											class="aspect-video w-full bg-gray-900 rounded-lg overflow-hidden shadow-lg relative"
+											class="aspect-video w-full bg-gray-900 rounded-lg overflow-hidden shadow-lg relative group"
 										>
 											<div
 												class="absolute inset-0 flex items-center justify-center text-gray-500"
@@ -236,8 +287,12 @@
 										</div>
 									</div>
 
-									<div class="bg-surface rounded-lg p-6">
-										<h3 class="font-bold text-primary mb-3">Key Approach:</h3>
+									<div
+										class="bg-white rounded p-6 border border-gray-100 ml-0 md:ml-14"
+									>
+										<p class="text-sm font-bold text-gray-500 uppercase mb-4">
+											Key Strategy:
+										</p>
 										<ul class="space-y-2">
 											<li
 												v-for="point in task.points"
@@ -264,80 +319,75 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-
-// State
 const activeTab = ref(0);
+const setTab = (index: number) => (activeTab.value = index);
 
-const setTab = (index: number) => {
-	activeTab.value = index;
-};
-
-// Data Tasks
+// UPDATED TASK DATA (WITH VIDEO & POINTS)
 const tasks = [
 	{
-		title: "Task 1: Evacuation Route",
+		title: "Evacuation Route",
 		description:
-			"The USV must navigate through a designated channel marked by buoys representing an evacuation route without touching the obstacles.",
-		video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+			"The ASV must travel safely through the designated entrance and exit gates, completing the route from start to finish without errors.",
+		video: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder Video
 		points: [
-			"Using LIDAR for obstacle detection.",
-			"Path planning algorithm using A* (A-Star).",
-			"Real-time heading correction.",
+			"Precision Path Following",
+			"Gate Detection using Lidar",
+			"Dead Reckoning Backup",
 		],
 	},
 	{
-		title: "Task 2: Debris Clearance",
+		title: "Debris Clearance",
 		description:
-			"Identifying and interacting with objects representing debris. The boat must push the correct colored object into a designated zone.",
-		video: "",
+			"The ASV moves through a channel toward a debris area, identifying and scanning floating objects to locate potential hazards.",
+		video: "", // Kosongkan jika belum ada video
 		points: [
-			"Color detection using YoloV8.",
-			"Precise motor control for pushing mechanism.",
-			"Object tracking logic.",
+			"Object Classification (YOLO)",
+			"Stereo Vision Depth Estimation",
+			"Real-time Mapping",
 		],
 	},
 	{
-		title: "Task 3: Emergency Response Sprint",
+		title: "Emergency Response Sprint",
 		description:
-			"A speed challenge where the USV must travel from Point A to Point B in the shortest time possible while avoiding static obstacles.",
+			"The ASV races to the emergency zone, performs a correct loop around the illuminated buoy, and then exits the area by navigating back through the buoys.",
 		video: "",
 		points: [
-			"Max throttle optimization.",
-			"Hydrodynamic stability control.",
-			"Reactive obstacle avoidance.",
+			"High-Speed Navigation",
+			"Buoy Color & Light Detection",
+			"Hydrodynamic Stability",
 		],
 	},
 	{
-		title: "Task 4: Supply Drop",
+		title: "Supply Drop",
 		description:
-			"Delivering a payload (ball) into a specific target area identified by an image or symbol.",
+			"The ASV transports and delivers water and racquetball supplies to fixed vessels located around the course.",
 		video: "",
 		points: [
-			"Symbol recognition.",
-			"Servo-based release mechanism.",
-			"Wind compensation calculation.",
+			"Precision Docking",
+			"Mechanical Payload Release",
+			"Target Identification",
 		],
 	},
 	{
-		title: "Task 5: Navigate the Marina",
+		title: "Navigate the Marina",
 		description:
-			"Complex maneuvering through a narrow acoustic channel where GPS might be denied.",
+			"The ASV enters the marina zone and autonomously docks into an open slip.",
 		video: "",
 		points: [
-			"Acoustic localization (Hydrophone).",
-			"IMU-based dead reckoning.",
-			"Close-range proximity sensors.",
+			"Lidar Point Cloud Processing",
+			"Path Planning in Confined Space",
+			"Docking Algorithm",
 		],
 	},
 	{
-		title: "Task 6: Harbor Alert",
+		title: "Harbor Alert",
 		description:
-			"Detecting a sound signal and moving towards the source while identifying the correct docking bay.",
+			"The ASV reacts to a triggered emergency audio alert within the harbor.",
 		video: "",
 		points: [
-			"Signal processing (FFT).",
-			"Sound source localization.",
-			"Automated docking procedure.",
+			"Acoustic Signal Processing (FFT)",
+			"Hydrophone Array",
+			"Sound Source Localization",
 		],
 	},
 ];
@@ -345,17 +395,16 @@ const tasks = [
 
 <style scoped>
 .animate-fade-in {
-	animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	animation: fadeIn 0.3s ease-out;
 }
-
 @keyframes fadeIn {
 	from {
 		opacity: 0;
-		transform: translateY(5px) scale(0.98);
+		transform: translateY(5px);
 	}
 	to {
 		opacity: 1;
-		transform: translateY(0) scale(1);
+		transform: translateY(0);
 	}
 }
 </style>

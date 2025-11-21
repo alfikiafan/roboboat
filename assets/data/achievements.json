@@ -1,34 +1,42 @@
 [
 	{
 		"year": "2025",
-		"competition": "Roboboat International Competition",
+		"competition": "Roboboat International",
 		"location": "Sarasota, Florida",
-		"rank": "5th Place",
-		"category": "Autonomous Surface Vehicle",
-		"description": "Successfully completed 4 autonomy missions. Awarded Best Propulsion Design."
+		"rank": "2nd Place Autonomy",
+		"category": "Main Challenge",
+		"description": "Also won: 3rd Technical Design Report, 5th Website, 6th Overall Design, 7th Video Introduction."
 	},
 	{
 		"year": "2024",
-		"competition": "KKCTBN (National USV Contest)",
-		"location": "Indonesia",
-		"rank": "1st Place",
-		"category": "Fuel Engine Remote Control",
-		"description": "National Champion out of 40 universities. Fastest lap record holder."
+		"competition": "Roboboat International",
+		"location": "Sarasota, Florida",
+		"rank": "3rd Place Overall Design",
+		"category": "Design Documentation",
+		"description": "Achievements: 6th Autonomy Challenge, 4th Technical Report, 4th Website, 4th Video Introduction."
 	},
 	{
 		"year": "2023",
-		"competition": "TechnoCorner UGM",
-		"location": "Yogyakarta",
-		"rank": "2nd Place",
-		"category": "IoT & Robotics Innovation",
-		"description": "Presented 'Mandakini 1.0' prototype for river debris cleaning system."
+		"competition": "Roboboat International",
+		"location": "Sarasota, Florida",
+		"rank": "2nd Place Website",
+		"category": "Multimedia Award",
+		"description": "Also secured: 3rd Technical Design Report, 4th Overall Design Documentation, 3rd Video Introduction."
 	},
 	{
 		"year": "2022",
-		"competition": "Kontes Robot Indonesia",
-		"location": "Surabaya",
-		"rank": "Finalist",
-		"category": "SAR Division",
-		"description": "Top 8 finish in Search and Rescue robot category."
+		"competition": "Roboboat International",
+		"location": "Sarasota, Florida",
+		"rank": "1st Place Website",
+		"category": "Multimedia Award",
+		"description": "Achievements: 2nd Overall Design Documentation, 5th Technical Report, 2nd Video Introduction."
+	},
+	{
+		"year": "2021",
+		"competition": "Roboboat International",
+		"location": "Online",
+		"rank": "2nd Place Skills Video",
+		"category": "Hull & Sensor",
+		"description": "Awarded for both Hull Design and Sensor Optimization categories."
 	}
 ]

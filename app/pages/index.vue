@@ -26,9 +26,9 @@
 				<div class="flex justify-center gap-4">
 					<NuxtLink
 						to="/roboboat2026"
-						class="px-8 py-3 bg-secondary text-white font-bold rounded hover:bg-secondary-light transition shadow-lg"
+						class="px-8 py-3 bg-secondary text-white font-bold rounded-3xl hover:bg-secondary-light transition shadow-lg"
 					>
-						Roboboat 2026 Report
+						Our Next Competition
 					</NuxtLink>
 				</div>
 			</div>
@@ -46,7 +46,6 @@
 							<Icon name="uil:file-alt" class="text-secondary" /> Technical
 							Design Report
 						</h3>
-
 						<div
 							class="w-full h-[500px] bg-gray-100 rounded-xl overflow-hidden border border-gray-200 shadow-inner relative group"
 						>
@@ -55,7 +54,6 @@
 								class="w-full h-full"
 								title="Technical Report PDF"
 							></iframe>
-
 							<a
 								href="https://pdfobject.com/pdf/sample.pdf"
 								target="_blank"
@@ -64,7 +62,6 @@
 								<Icon name="uil:external-link-alt" /> Open/Download
 							</a>
 						</div>
-
 						<p class="mt-2 text-xs text-center text-gray-400">
 							Trouble viewing?
 							<a
@@ -85,7 +82,6 @@
 								<Icon name="uil:youtube" class="text-secondary" /> Team
 								Introduction
 							</h3>
-
 							<div
 								class="w-full aspect-video bg-black rounded-xl overflow-hidden shadow-lg relative"
 							>
@@ -98,7 +94,6 @@
 									allowfullscreen
 								></iframe>
 							</div>
-
 							<p class="mt-4 text-sm text-gray-500 italic">
 								Watch our latest sea trial and system testing documentation.
 							</p>
@@ -119,7 +114,6 @@
 										class="absolute inset-0 bg-primary/60 mix-blend-multiply transition duration-300 group-hover:bg-primary/50"
 									></div>
 								</div>
-
 								<div class="relative z-10 text-center">
 									<h2
 										class="text-2xl md:text-3xl font-extrabold text-white mb-1 tracking-wide"
@@ -140,7 +134,50 @@
 			</div>
 		</section>
 
-		<section class="py-16 bg-surface border-y border-surface-dark">
+		<section class="py-20 bg-surface border-b border-gray-200">
+			<div class="container mx-auto px-4">
+				<span
+					class="text-secondary font-bold tracking-widest uppercase text-xs mb-3 block"
+					>Who We Are</span
+				>
+				<h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-8">
+					Engineering The Future of Maritime
+				</h2>
+
+				<div class="text-lg text-gray-600 leading-relaxed">
+					<p class="mb-6">
+						<strong>Bengawan Unmanned Vehicle Team</strong> is a research team
+						from Sebelas Maret University engaged in the development and
+						fabrication of Unmanned Aerial Vehicles (UAV) and Unmanned Surface
+						Vessels (USV). The team consists of students from various faculties
+						and aims to contribute to the advancement of UAV and USV technology
+						in Indonesia, as well as to find solutions to various problems that
+						can be addressed through the application of these technologies.
+					</p>
+					<p>
+						<strong>Bengawan UV Roboboat Team</strong> is a subdivision of
+						Bengawan UV that competes in the International Roboboat Competition.
+						We have participated in this competition since 2021 and consistently
+						strive to enhance the quality of our vessel’s design, technology,
+						and autonomous capabilities in each competition cycle. Our efforts
+						extend beyond achieving competitive results, as we also aim to
+						broaden students' knowledge and experience in maritime technology
+						and robotics.
+					</p>
+				</div>
+
+				<div class="mt-8">
+					<NuxtLink
+						to="/profile"
+						class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded hover:bg-primary-light transition"
+					>
+						Meet Our Team <Icon name="uil:arrow-right" />
+					</NuxtLink>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-16 bg-white border-b border-surface-dark">
 			<div class="container mx-auto px-4">
 				<div class="flex flex-col md:flex-row justify-between items-end mb-10">
 					<div>
@@ -149,25 +186,19 @@
 							>Hall of Fame</span
 						>
 						<h2 class="text-3xl font-bold text-primary-dark mt-2">
-							Recent Achievements
+							Roboboat Achievements
 						</h2>
 					</div>
-					<NuxtLink
-						to="/profile"
-						class="hidden md:flex items-center gap-2 text-primary font-bold hover:text-secondary transition mt-4 md:mt-0"
-					>
-						View All Awards <Icon name="uil:arrow-right" />
-					</NuxtLink>
 				</div>
 
-				<div class="grid md:grid-cols-4 gap-6">
+				<div class="grid md:grid-cols-3 gap-6">
 					<div
-						v-for="(item, index) in achievements.slice(0, 4)"
+						v-for="(item, index) in achievements"
 						:key="index"
-						class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-primary group"
+						class="bg-surface p-6 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-primary group flex flex-col"
 					>
 						<div class="flex justify-between items-start mb-4">
-							<span class="text-4xl font-bold text-primary/60">{{
+							<span class="text-4xl font-bold text-primary/20">{{
 								item.year
 							}}</span>
 							<Icon
@@ -175,52 +206,16 @@
 								class="text-2xl text-yellow-500 group-hover:scale-110 transition"
 							/>
 						</div>
-						<h3 class="text-xl font-bold text-secondary leading-tight mb-2">
+
+						<h3 class="text-lg font-bold text-primary-dark leading-tight mb-2">
 							{{ item.rank }}
 						</h3>
-						<p class="text-sm font-bold text-gray-500 uppercase mb-2">
-							{{ item.competition }}
-						</p>
-						<p class="text-xs text-gray-600 line-clamp-2">
+
+						<div class="w-10 h-1 bg-secondary rounded mb-3"></div>
+
+						<p class="text-xs text-gray-600 leading-relaxed flex-grow">
 							{{ item.description }}
 						</p>
-					</div>
-				</div>
-
-				<div class="mt-8 text-center md:hidden">
-					<NuxtLink to="/profile" class="text-primary font-bold text-sm"
-						>View All Awards</NuxtLink
-					>
-				</div>
-			</div>
-		</section>
-
-		<section class="py-20 bg-surface">
-			<div
-				class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12"
-			>
-				<div class="md:w-1/2">
-					<h2 class="text-4xl font-bold text-primary mb-6">
-						Innovating on Water
-					</h2>
-					<p class="text-lg text-gray-700 leading-relaxed mb-6">
-						Bengawan UV is a research team dedicated to developing Unmanned
-						Surface Vehicles (USV). We combine mechanical engineering,
-						electronics, and computer vision to solve real-world maritime
-						challenges.
-					</p>
-					<NuxtLink
-						to="/profile"
-						class="text-primary font-bold hover:text-secondary flex items-center gap-2"
-					>
-						Read our History <Icon name="uil:arrow-right" />
-					</NuxtLink>
-				</div>
-				<div class="md:w-1/2">
-					<div
-						class="aspect-video bg-gray-300 rounded-lg shadow-lg flex items-center justify-center text-gray-500"
-					>
-						[Foto Tim/Workshop]
 					</div>
 				</div>
 			</div>

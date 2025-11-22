@@ -1,42 +1,57 @@
 [
 	{
-		"year": "2025",
-		"competition": "Roboboat International",
+		"competition": "Roboboat 2025",
 		"location": "Sarasota, Florida",
-		"rank": "2nd Place Autonomy",
-		"category": "Main Challenge",
-		"description": "Also won: 3rd Technical Design Report, 5th Website, 6th Overall Design, 7th Video Introduction."
+		"highlight": "2nd Place Autonomy Challenge",
+		"sub_highlight": "6th Place Overall Design Documentation",
+		"details": [
+			"3rd Place Technical Design Report",
+			"5th Place Team Website",
+			"7th Place Team Video Introduction"
+		]
 	},
 	{
-		"year": "2024",
-		"competition": "Roboboat International",
+		"competition": "Roboboat 2024",
 		"location": "Sarasota, Florida",
-		"rank": "3rd Place Overall Design",
-		"category": "Design Documentation",
-		"description": "Achievements: 6th Autonomy Challenge, 4th Technical Report, 4th Website, 4th Video Introduction."
+		"highlight": "3rd Place Overall Design Documentation",
+		"sub_highlight": "6th Place Autonomy Challenge",
+		"details": [
+			"4th Place Technical Design Report",
+			"4th Place Team Website",
+			"4th Place Team Video Introduction"
+		]
 	},
 	{
-		"year": "2023",
-		"competition": "Roboboat International",
+		"competition": "Roboboat 2023",
 		"location": "Sarasota, Florida",
-		"rank": "2nd Place Website",
-		"category": "Multimedia Award",
-		"description": "Also secured: 3rd Technical Design Report, 4th Overall Design Documentation, 3rd Video Introduction."
+		"highlight": "4th Place Overall Design Documentation",
+		"sub_highlight": null,
+		"details": [
+			"2nd Place Team Website",
+			"3rd Place Technical Design Report",
+			"3rd Place Team Video Introduction"
+		]
 	},
 	{
-		"year": "2022",
-		"competition": "Roboboat International",
+		"competition": "Roboboat 2022",
 		"location": "Sarasota, Florida",
-		"rank": "1st Place Website",
-		"category": "Multimedia Award",
-		"description": "Achievements: 2nd Overall Design Documentation, 5th Technical Report, 2nd Video Introduction."
+		"highlight": "2nd Place Overall Design Documentation",
+		"sub_highlight": null,
+		"details": [
+			"1st Place Team Website",
+			"2nd Place Team Video Introduction",
+			"5th Place Technical Design Report"
+		]
 	},
 	{
-		"year": "2021",
-		"competition": "Roboboat International",
+		"competition": "Roboboat 2021",
 		"location": "Online",
-		"rank": "2nd Place Skills Video",
-		"category": "Hull & Sensor",
-		"description": "Awarded for both Hull Design and Sensor Optimization categories."
+		"highlight": null,
+		"sub_highlight": null,
+		"equal_highlights": [
+			"2nd Place Skills Video: Hull Design",
+			"2nd Place Skills Video: Sensor Optimization"
+		],
+		"details": []
 	}
 ]

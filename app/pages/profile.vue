@@ -22,9 +22,9 @@
 					</h2>
 					<div class="prose text-gray-600 text-lg leading-relaxed">
 						<p class="mb-4">
-							**Bengawan Unmanned Vehicle (Bengawan UV)** is a specialized
-							research team under the Faculty of Engineering, Universitas
-							Sebelas Maret (UNS), Surakarta.
+							<strong>Bengawan Unmanned Vehicle (Bengawan UV)</strong> is a
+							specialized research team under the Faculty of Engineering,
+							Universitas Sebelas Maret (UNS), Surakarta.
 						</p>
 						<p class="mb-4">
 							Established in 2021, our mission is to advance maritime technology
@@ -59,6 +59,7 @@
 				<h2 class="text-3xl font-bold text-primary-dark mb-10 text-center">
 					Awards & Recognitions
 				</h2>
+
 				<div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
 					<div
 						v-for="(item, index) in achievements"
@@ -68,36 +69,67 @@
 						<div
 							class="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-b from-primary to-secondary group-hover:w-3 transition-all"
 						></div>
-						<div class="relative z-10 pl-2">
-							<h3
-								class="text-xl md:text-2xl font-bold text-primary-dark leading-tight mb-2 group-hover:text-primary transition-colors"
+
+						<div class="relative z-10 pl-4">
+							<div
+								class="flex justify-between items-center mb-4 pb-2 border-b border-gray-100"
 							>
-								{{ item.rank }}
-							</h3>
-							<div class="flex items-center flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="font-bold text-primary bg-primary/5 px-2 py-0.5 rounded"
-								>
-									{{ item.year }}
-								</span>
-								<span class="text-gray-300">|</span>
-								<span
-									class="font-bold text-secondary uppercase tracking-wide text-xs"
+								<h4
+									class="font-bold text-gray-800 uppercase tracking-widest text-sm"
 								>
 									{{ item.competition }}
+								</h4>
+								<span
+									class="flex items-center gap-1 text-xs text-gray-400 font-medium"
+								>
+									<Icon name="uil:map-marker" /> {{ item.location }}
 								</span>
 							</div>
-							<div class="text-sm text-gray-600 leading-relaxed mb-4">
-								{{ item.description }}
-							</div>
-							<div
-								class="flex items-center gap-2 text-xs text-gray-400 font-medium border-t border-gray-50 pt-3 mt-auto"
+
+							<h3
+								v-if="item.highlight"
+								class="text-xl md:text-2xl font-extrabold text-primary-dark leading-tight mb-1 group-hover:text-primary transition-colors"
 							>
-								<span class="flex items-center gap-1"
-									><Icon name="uil:map-marker" /> {{ item.location }}</span
+								{{ item.highlight }}
+							</h3>
+
+							<h4
+								v-if="item.sub_highlight"
+								class="text-lg font-bold text-secondary mt-1 mb-2"
+							>
+								{{ item.sub_highlight }}
+							</h4>
+
+							<div
+								v-if="item.equal_highlights && item.equal_highlights.length > 0"
+								class="space-y-2 mt-2"
+							>
+								<h4
+									v-for="(award, idx) in item.equal_highlights"
+									:key="idx"
+									class="text-lg font-bold text-secondary leading-tight group-hover:text-primary transition-colors"
 								>
-								<span>•</span>
-								<span>{{ item.category }}</span>
+									{{ award }}
+								</h4>
+							</div>
+
+							<div
+								v-if="item.details && item.details.length > 0"
+								class="mt-4 pt-4 border-t border-dashed border-gray-200"
+							>
+								<ul class="space-y-2">
+									<li
+										v-for="(detail, i) in item.details"
+										:key="i"
+										class="flex items-start gap-2 text-sm text-gray-600"
+									>
+										<Icon
+											name="uil:award"
+											class="text-gray-400 flex-shrink-0 mt-0.5"
+										/>
+										<span>{{ detail }}</span>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>

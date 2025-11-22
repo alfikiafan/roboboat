@@ -1,43 +1,113 @@
 {
 	"packages": [
 		{
-			"name": "Bronze",
-			"price": "IDR 5-10 Juta",
-			"color": "border-orange-300",
-			"bg": "bg-orange-50",
-			"benefits": [
-				"Logo kecil di Website",
-				"Logo kecil di Banner Lomba",
-				"Social Media Shoutout (Story)",
-				"Sertifikat Apresiasi"
+			"name": "Main Sponsor",
+			"price": "> 50 Juta",
+			"features": [
+				{ "label": "Logo di Wahana", "value": "Size XL" },
+				{ "label": "Logo di Kaos Tim", "value": "Size XL" },
+				{ "label": "Logo di Kaos Polo", "value": "Size XL" },
+				{ "label": "Logo di X-Banner", "value": "Size XL" },
+				{ "label": "Logo Backdrop Launching", "value": "Size XL" },
+				{
+					"label": "Logo Aftermovie",
+					"value": "5 detik",
+					"subtext": "\"Our Biggest Thanks To\""
+				},
+				{ "label": "Social Media", "value": true },
+				{ "label": "Ad-Lips", "value": true },
+				{ "label": "Vandel", "value": true },
+				{ "label": "Kolaborasi Konten", "value": true },
+				{ "label": "Sambutan Launching", "value": true },
+				{ "label": "Branding Company", "value": true }
 			]
 		},
 		{
-			"name": "Silver",
-			"price": "IDR 10-25 Juta",
-			"color": "border-gray-300",
-			"bg": "bg-gray-50",
-			"benefits": [
-				"Logo sedang di Website & Boat",
-				"Logo sedang di Jersey Tim",
-				"Social Media Feed & Story",
-				"Product Review Video",
-				"Undangan Launching Kapal"
+			"name": "Platinum",
+			"price": "21 - 50 Juta",
+			"features": [
+				{ "label": "Logo di Wahana", "value": "Size L" },
+				{ "label": "Logo di Kaos Tim", "value": "Size L" },
+				{ "label": "Logo di Kaos Polo", "value": "Size L" },
+				{ "label": "Logo di X-Banner", "value": "Size L" },
+				{ "label": "Logo Backdrop Launching", "value": "Size L" },
+				{
+					"label": "Logo Aftermovie",
+					"value": "5 detik",
+					"subtext": "\"Our Biggest Thanks To\""
+				},
+				{ "label": "Social Media", "value": true },
+				{ "label": "Ad-Lips", "value": true },
+				{ "label": "Vandel", "value": true },
+				{ "label": "Kolaborasi Konten", "value": true },
+				{ "label": "Sambutan Launching", "value": true },
+				{ "label": "Branding Company", "value": false }
 			]
 		},
 		{
 			"name": "Gold",
-			"price": "> IDR 25 Juta",
-			"color": "border-yellow-400",
-			"bg": "bg-yellow-50",
-			"highlight": true,
-			"benefits": [
-				"Logo BESAR di Posisi Utama (Kapal & Jersey)",
-				"Exclusive Video Branding",
-				"Workshop / Talent Recruitment",
-				"Akses Data Riset Tim",
-				"VIP Access saat Lomba",
-				"Hak Eksklusif Publikasi"
+			"price": "11 - 20 Juta",
+			"features": [
+				{ "label": "Logo di Wahana", "value": "Size M" },
+				{ "label": "Logo di Kaos Tim", "value": "Size M" },
+				{ "label": "Logo di Kaos Polo", "value": "Size M" },
+				{ "label": "Logo di X-Banner", "value": "Size M" },
+				{ "label": "Logo Backdrop Launching", "value": "Size M" },
+				{
+					"label": "Logo Aftermovie",
+					"value": "5 detik",
+					"subtext": "\"Our Sponsor\""
+				},
+				{ "label": "Social Media", "value": true },
+				{ "label": "Ad-Lips", "value": true },
+				{ "label": "Vandel", "value": true },
+				{ "label": "Kolaborasi Konten", "value": true },
+				{ "label": "Sambutan Launching", "value": false },
+				{ "label": "Branding Company", "value": false }
+			]
+		},
+		{
+			"name": "Silver",
+			"price": "6 - 10 Juta",
+			"features": [
+				{ "label": "Logo di Wahana", "value": "Size S" },
+				{ "label": "Logo di Kaos Tim", "value": "Size S" },
+				{ "label": "Logo di Kaos Polo", "value": "Size S" },
+				{ "label": "Logo di X-Banner", "value": "Size S" },
+				{ "label": "Logo Backdrop Launching", "value": "Size S" },
+				{
+					"label": "Logo Aftermovie",
+					"value": "5 detik",
+					"subtext": "\"Our Sponsor\""
+				},
+				{ "label": "Social Media", "value": true },
+				{ "label": "Ad-Lips", "value": true },
+				{ "label": "Vandel", "value": true },
+				{ "label": "Kolaborasi Konten", "value": true },
+				{ "label": "Sambutan Launching", "value": false },
+				{ "label": "Branding Company", "value": false }
+			]
+		},
+		{
+			"name": "Bronze",
+			"price": "2 - 5 Juta",
+			"features": [
+				{ "label": "Logo di Wahana", "value": "Size XS" },
+				{ "label": "Logo di Kaos Tim", "value": "Size XS" },
+				{ "label": "Logo di Kaos Polo", "value": "Size XS" },
+				{ "label": "Logo di X-Banner", "value": false },
+				{ "label": "Logo Backdrop Launching", "value": false },
+				{
+					"label": "Logo Aftermovie",
+					"value": "5 detik",
+					"subtext": "\"Our Sponsor\""
+				},
+				{ "label": "Social Media", "value": true },
+				{ "label": "Ad-Lips", "value": true },
+				{ "label": "Vandel", "value": true },
+				{ "label": "Kolaborasi Konten", "value": false },
+				{ "label": "Sambutan Launching", "value": false },
+				{ "label": "Branding Company", "value": false }
 			]
 		}
 	],
@@ -47,6 +117,8 @@
 		"Telkom Indonesia",
 		"Wika",
 		"Len Industri",
-		"Pelindo"
+		"Pelindo",
+		"PLN",
+		"Toyota"
 	]
 }

@@ -134,89 +134,217 @@
 			</div>
 		</section>
 
-		<section class="py-20 bg-surface border-b border-gray-200">
-			<div class="container mx-auto px-4">
-				<span
-					class="text-secondary font-bold tracking-widest uppercase text-xs mb-3 block"
-					>Who We Are</span
-				>
-				<h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-8">
-					Engineering The Future of Maritime
-				</h2>
+		<section
+			class="py-20 bg-surface border-b border-gray-200 relative overflow-hidden"
+		>
+			<div
+				class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"
+			></div>
+			<div
+				class="absolute bottom-0 left-0 -mb-10 -ml-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"
+			></div>
 
-				<div class="text-lg text-gray-600 leading-relaxed">
-					<p class="mb-6">
-						<strong>Bengawan Unmanned Vehicle Team</strong> is a research team
-						from Sebelas Maret University engaged in the development and
-						fabrication of Unmanned Aerial Vehicles (UAV) and Unmanned Surface
-						Vessels (USV). The team consists of students from various faculties
-						and aims to contribute to the advancement of UAV and USV technology
-						in Indonesia, as well as to find solutions to various problems that
-						can be addressed through the application of these technologies.
-					</p>
-					<p>
-						<strong>Bengawan UV Roboboat Team</strong> is a subdivision of
-						Bengawan UV that competes in the International Roboboat Competition.
-						We have participated in this competition since 2021 and consistently
-						strive to enhance the quality of our vessel’s design, technology,
-						and autonomous capabilities in each competition cycle. Our efforts
-						extend beyond achieving competitive results, as we also aim to
-						broaden students' knowledge and experience in maritime technology
-						and robotics.
-					</p>
-				</div>
+			<div class="container mx-auto px-4 relative z-10">
+				<div class="flex flex-col md:flex-row gap-12 lg:gap-20 items-center">
+					<div class="md:w-1/2 w-full relative group">
+						<div
+							class="absolute inset-0 bg-primary rounded-2xl transform translate-x-3 translate-y-3 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"
+						></div>
 
-				<div class="mt-8">
-					<NuxtLink
-						to="/profile"
-						class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded hover:bg-primary-light transition"
-					>
-						Meet Our Team <Icon name="uil:arrow-right" />
-					</NuxtLink>
+						<img
+							src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070"
+							alt="Team Working"
+							class="relative w-full h-auto rounded-2xl shadow-xl border-4 border-white z-10"
+						/>
+
+						<div
+							class="absolute -bottom-6 -right-6 z-20 bg-white p-4 rounded-xl shadow-lg border border-gray-100 flex items-center gap-3 animate-bounce-slow"
+						>
+							<div
+								class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary"
+							>
+								<Icon name="uil:rocket" class="text-2xl" />
+							</div>
+							<div>
+								<p
+									class="text-[10px] text-gray-400 uppercase font-bold tracking-wider"
+								>
+									Established
+								</p>
+								<p class="text-lg font-bold text-primary-dark">2021</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="md:w-1/2 w-full">
+						<div
+							class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-gray-200 rounded-full mb-6 shadow-sm"
+						>
+							<span
+								class="w-2 h-2 bg-secondary rounded-full animate-pulse"
+							></span>
+							<span
+								class="text-xs font-bold text-gray-500 uppercase tracking-widest"
+								>Who We Are</span
+							>
+						</div>
+
+						<h2
+							class="text-3xl md:text-5xl font-bold text-primary-dark mb-6 leading-tight"
+						>
+							About Bengawan UV
+						</h2>
+
+						<div
+							class="prose prose-lg text-gray-600 leading-relaxed mb-8 text-justify"
+						>
+							<p>
+								<strong>Bengawan Unmanned Vehicle (Bengawan UV)</strong> is a
+								specialized research team under the Faculty of Engineering,
+								Universitas Sebelas Maret (UNS), Surakarta.
+							</p>
+							<p>
+								Established in 2021, our mission is to advance maritime
+								technology through the development of autonomous surface
+								vehicles (ASV). We provide a platform for students to apply
+								engineering principles in solving real-world aquatic challenges.
+							</p>
+							<p>
+								Our team consists of interdisciplinary students from Mechanical,
+								Electrical, and Informatics Engineering working together to put
+								UNS on the global map of maritime robotics.
+							</p>
+						</div>
+
+						<div>
+							<NuxtLink
+								to="/profile"
+								class="inline-flex items-center gap-3 px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-light transition shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+							>
+								<span>Meet Our Team</span>
+								<Icon name="uil:arrow-right" class="text-xl" />
+							</NuxtLink>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="py-16 bg-white border-b border-surface-dark">
+		<section class="py-20 bg-white border-b border-surface-dark">
 			<div class="container mx-auto px-4">
-				<div class="flex flex-col md:flex-row justify-between items-end mb-10">
-					<div>
+				<div class="text-center mb-12">
+					<span
+						class="text-secondary font-bold tracking-widest uppercase text-xs"
+						>Hall of Fame</span
+					>
+					<h2 class="text-3xl md:text-4xl font-bold text-primary-dark mt-2">
+						Previous Achievements
+					</h2>
+
+					<div class="mt-6 inline-block">
 						<span
-							class="text-secondary font-bold tracking-widest uppercase text-xs"
-							>Hall of Fame</span
+							class="bg-gray-100 text-primary-dark px-6 py-2 rounded-full font-extrabold text-xl tracking-wide border border-gray-200"
 						>
-						<h2 class="text-3xl font-bold text-primary-dark mt-2">
-							Roboboat Achievements
-						</h2>
+							ROBOBOAT 2025
+						</span>
 					</div>
 				</div>
 
-				<div class="grid md:grid-cols-3 gap-6">
+				<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
 					<div
-						v-for="(item, index) in achievements"
-						:key="index"
-						class="bg-surface p-6 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-primary group flex flex-col"
+						class="bg-gradient-to-br from-primary to-primary-dark text-white rounded-2xl p-8 md:p-12 flex flex-col justify-center items-center text-center shadow-xl relative overflow-hidden group"
 					>
-						<div class="flex justify-between items-start mb-4">
-							<span class="text-4xl font-bold text-primary/20">{{
-								item.year
-							}}</span>
-							<Icon
-								name="uil:trophy"
-								class="text-2xl text-yellow-500 group-hover:scale-110 transition"
-							/>
+						<Icon
+							name="uil:ship"
+							class="absolute -bottom-6 -left-6 text-9xl text-white/10 group-hover:scale-110 transition-transform duration-700"
+						/>
+						<Icon
+							name="uil:trophy"
+							class="absolute top-6 right-6 text-4xl text-secondary/80"
+						/>
+
+						<div class="relative z-10">
+							<h3
+								class="text-2xl font-bold text-white/90 uppercase tracking-widest mb-4 border-b border-white/20 pb-4 inline-block"
+							>
+								Autonomy Challenge
+							</h3>
+							<div class="text-5xl md:text-7xl font-extrabold text-white mb-4">
+								2nd Place
+							</div>
+							<p class="text-white/80 text-sm font-medium">
+								Main Competition Category
+							</p>
+						</div>
+					</div>
+
+					<div
+						class="bg-surface rounded-2xl p-8 md:p-12 shadow-sm border border-gray-200 flex flex-col justify-center"
+					>
+						<div
+							class="flex items-center gap-4 mb-6 border-b border-gray-300 pb-6"
+						>
+							<div
+								class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary text-2xl shadow-sm"
+							>
+								<Icon name="uil:file-check-alt" />
+							</div>
+							<div>
+								<h3 class="text-2xl font-bold text-primary-dark">
+									Design Documentation
+								</h3>
+								<p class="text-xs text-gray-500 uppercase tracking-wide">
+									Documentation Category
+								</p>
+							</div>
 						</div>
 
-						<h3 class="text-lg font-bold text-primary-dark leading-tight mb-2">
-							{{ item.rank }}
-						</h3>
+						<div class="mb-6">
+							<p class="text-3xl font-extrabold text-primary-dark">6th Place</p>
+							<p class="text-sm font-bold text-gray-500 uppercase">
+								Overall Design Documentation
+							</p>
+						</div>
 
-						<div class="w-10 h-1 bg-secondary rounded mb-3"></div>
-
-						<p class="text-xs text-gray-600 leading-relaxed flex-grow">
-							{{ item.description }}
-						</p>
+						<ul class="space-y-3">
+							<li class="flex items-start gap-3">
+								<Icon
+									name="uil:award"
+									class="text-secondary text-xl flex-shrink-0 mt-0.5"
+								/>
+								<span class="text-gray-700"
+									><strong>3rd Place</strong> Technical Design Report</span
+								>
+							</li>
+							<li class="flex items-start gap-3">
+								<Icon
+									name="uil:award"
+									class="text-secondary text-xl flex-shrink-0 mt-0.5"
+								/>
+								<span class="text-gray-700"
+									><strong>5th Place</strong> Team Website</span
+								>
+							</li>
+							<li class="flex items-start gap-3">
+								<Icon
+									name="uil:award"
+									class="text-secondary text-xl flex-shrink-0 mt-0.5"
+								/>
+								<span class="text-gray-700"
+									><strong>7th Place</strong> Team Video Introduction</span
+								>
+							</li>
+						</ul>
 					</div>
+				</div>
+
+				<div class="text-center">
+					<NuxtLink
+						to="/profile"
+						class="inline-flex items-center gap-2 px-8 py-3 border-2 border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-white transition-all shadow-sm hover:shadow-md"
+					>
+						See All Achievements <Icon name="uil:arrow-right" />
+					</NuxtLink>
 				</div>
 			</div>
 		</section>

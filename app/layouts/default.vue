@@ -18,7 +18,7 @@
 				</NuxtLink>
 
 				<nav
-					class="hidden lg:flex gap-6 xl:gap-10 text-sm font-bold text-gray-600 items-center"
+					class="hidden lg:flex gap-4 xl:gap-10 text-sm font-bold text-gray-600 items-center"
 				>
 					<NuxtLink
 						to="/"
@@ -155,6 +155,14 @@
 						></span>
 					</NuxtLink>
 
+					<button
+						@click="toggleSearch"
+						class="w-10 h-10 rounded-full flex items-center justify-center text-gray-500 hover:bg-gray-100 hover:text-primary transition ml-2"
+						title="Search (Ctrl+K)"
+					>
+						<Icon name="uil:search" class="text-xl" />
+					</button>
+
 					<NuxtLink
 						to="/contact"
 						class="px-5 py-2 bg-primary text-white rounded-full hover:bg-secondary transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 whitespace-nowrap ml-2"
@@ -260,6 +268,13 @@
 							class="hover:text-primary py-2 border-b border-gray-50"
 							>Sponsorship</NuxtLink
 						>
+						<button
+							@click="toggleSearch"
+							class="text-left hover:text-primary py-2 border-b border-gray-50 flex items-center gap-2"
+						>
+							<Icon name="uil:search" /> Search
+						</button>
+
 						<NuxtLink
 							to="/contact"
 							@click="isMobileOpen = false"
@@ -437,7 +452,7 @@
 </style>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, inject } from "vue";
 
 const isMobileOpen = ref(false);
 
@@ -454,4 +469,7 @@ onMounted(() => {
 onUnmounted(() => {
 	window.removeEventListener("scroll", handleScroll);
 });
+
+// Inject fungsi toggle yang kita provide di app.vue
+const toggleSearch = inject("toggleSearch") as () => void;
 </script>

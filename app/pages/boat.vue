@@ -5,8 +5,8 @@
 		>
 			<div class="absolute inset-0 z-0">
 				<img
-					src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/18/2022/04/types-of-boat-Bowrider-Sea-Ray-Sundancer-370.jpg"
-					alt="Mandakini 3.0"
+					src="/images/mandakini/mandakini-new-water.webp"
+					alt="Mandakini New Water"
 					class="w-full h-full object-cover opacity-80"
 				/>
 				<div
@@ -30,7 +30,7 @@
 						MANDAKINI
 						<span
 							class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-white"
-							>3.0</span
+							>NEW WATER</span
 						>
 					</h1>
 					<p
@@ -49,27 +49,20 @@
 			>
 				<div class="md:w-1/2">
 					<h2 class="text-3xl font-bold text-primary-dark mb-6">
-						The Evolution of Agility
+						About Mandakini New Water
 					</h2>
 					<div class="prose text-gray-600 leading-relaxed text-lg text-justify">
 						<p>
-							Mandakini 3.0 represents a quantum leap in our USV development
-							program. Unlike its predecessors, this iteration focuses heavily
-							on <strong>modular design</strong> and
-							<strong>hydrodynamic efficiency</strong>.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+							enim ad minim veniam, quis nostrud exercitation ullamco laboris
+							nisi ut aliquip ex ea commodo consequat.
 						</p>
 						<p>
-							Built with a carbon-fiber reinforced hull, Mandakini 3.0
-							significantly reduces drag while maintaining structural integrity
-							against wave impacts. The vessel is equipped with a proprietary
-							vector thrust system, allowing for holonomic movement—essential
-							for the complex docking tasks in Roboboat 2026.
-						</p>
-						<p>
-							Our engineering philosophy for Mandakini is simple:
-							<em>"Intelligence through Stability"</em>. By ensuring a
-							mechanically stable platform, our AI algorithms can perform object
-							detection and path planning with higher precision.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit
+							anim id est laborum.
 						</p>
 					</div>
 				</div>
@@ -105,55 +98,83 @@
 				class="relative w-full max-w-5xl mx-auto bg-surface-dim rounded-3xl shadow-2xl overflow-hidden border border-gray-200"
 			>
 				<img
-					src="https://southernboating.com/wp-content/uploads/2025/11/20251119-Highfield-scaled.webp"
-					alt="Mandakini Boat Top View"
+					src="/images/mandakini/mandakini-new-water-overview.webp"
+					alt="Mandakini New Water Boat"
 					class="w-full h-auto object-cover opacity-90"
 				/>
 
 				<button
-					@click="activeSpec = 'vision'"
-					class="absolute top-[30%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 group"
+					@click="activeSpec = 'perception'"
+					class="absolute top-[18%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 group"
 				>
 					<span class="relative flex h-8 w-8 md:h-12 md:w-12">
 						<span
 							class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"
 						></span>
 						<span
-							class="relative inline-flex rounded-full h-8 w-8 md:h-12 md:w-12 bg-secondary border-4 border-white items-center justify-center text-white shadow-lg"
+							class="relative inline-flex rounded-full h-8 w-8 md:h-12 md:w-12 bg-secondary border-4 border-white items-center justify-center text-white text-lg md:text-2xl shadow-lg"
 						>
 							<Icon name="uil:camera" />
 						</span>
 					</span>
 				</button>
-
 				<button
-					@click="activeSpec = 'propulsion'"
-					class="absolute top-[65%] left-[25%] transform -translate-x-1/2 -translate-y-1/2 group"
+					@click="activeSpec = 'navigation'"
+					class="absolute top-[38%] left-[44%] transform -translate-x-1/2 -translate-y-1/2 group"
 				>
 					<span class="relative flex h-8 w-8 md:h-12 md:w-12">
 						<span
 							class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"
 						></span>
 						<span
-							class="relative inline-flex rounded-full h-8 w-8 md:h-12 md:w-12 bg-secondary border-4 border-white items-center justify-center text-white shadow-lg"
+							class="relative inline-flex rounded-full h-8 w-8 md:h-12 md:w-12 bg-secondary border-4 border-white items-center justify-center text-white text-lg md:text-2xl shadow-lg"
 						>
-							<Icon name="uil:bolt" />
+							<Icon name="uil:processor" />
 						</span>
 					</span>
 				</button>
-
 				<button
-					@click="activeSpec = 'computing'"
-					class="absolute top-[45%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 group"
+					@click="activeSpec = 'hull'"
+					class="absolute top-[72%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 group"
 				>
 					<span class="relative flex h-8 w-8 md:h-12 md:w-12">
 						<span
 							class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"
 						></span>
 						<span
-							class="relative inline-flex rounded-full h-8 w-8 md:h-12 md:w-12 bg-secondary border-4 border-white items-center justify-center text-white shadow-lg"
+							class="relative inline-flex rounded-full h-8 w-8 md:h-12 md:w-12 bg-secondary border-4 border-white items-center justify-center text-white text-lg md:text-2xl shadow-lg"
 						>
-							<Icon name="uil:processor" />
+							<Icon name="uil:ship" />
+						</span>
+					</span>
+				</button>
+				<button
+					@click="activeSpec = 'frame'"
+					class="absolute top-[65%] left-[70%] transform -translate-x-1/2 -translate-y-1/2 group"
+				>
+					<span class="relative flex h-8 w-8 md:h-12 md:w-12">
+						<span
+							class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"
+						></span>
+						<span
+							class="relative inline-flex rounded-full h-8 w-8 md:h-12 md:w-12 bg-secondary border-4 border-white items-center justify-center text-white text-lg md:text-2xl shadow-lg"
+						>
+							<Icon name="uil:layer-group" />
+						</span>
+					</span>
+				</button>
+				<button
+					@click="activeSpec = 'propulsion'"
+					class="absolute top-[60%] left-[28%] transform -translate-x-1/2 -translate-y-1/2 group"
+				>
+					<span class="relative flex h-8 w-8 md:h-12 md:w-12">
+						<span
+							class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"
+						></span>
+						<span
+							class="relative inline-flex rounded-full h-8 w-8 md:h-12 md:w-12 bg-secondary border-4 border-white items-center justify-center text-white text-lg md:text-2xl shadow-lg"
+						>
+							<Icon name="uil:bolt" />
 						</span>
 					</span>
 				</button>
@@ -161,28 +182,28 @@
 				<Transition name="slide-up">
 					<div
 						v-if="activeSpec"
-						class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t-4 border-secondary p-6 md:p-8 shadow-[0_-10px_40px_rgba(0,0,0,0.1)] z-20"
+						class="absolute bottom-0 left-0 right-0 bg-white/60 backdrop-blur-sm border-t-4 border-secondary p-6 md:p-8 shadow-[0_-10px_40px_rgba(0,0,0,0.1)] z-20"
 					>
 						<div class="flex justify-between items-start">
 							<div>
 								<h3 class="text-2xl font-bold text-primary-dark mb-2">
 									{{ specs[activeSpec].title }}
 								</h3>
-								<p class="text-gray-600 mb-4 max-w-2xl">
+								<p class="text-gray-800 mb-4 max-w-2xl md:text-base">
 									{{ specs[activeSpec].desc }}
 								</p>
-								<div class="flex flex-wrap gap-3">
+								<div class="flex flex-wrap gap-2 md:gap-3">
 									<span
 										v-for="tag in specs[activeSpec].tags"
 										:key="tag"
-										class="px-3 py-1 bg-surface text-primary-dark text-xs font-bold rounded-full border border-surface-dark"
+										class="px-3 py-1 bg-surface text-primary-dark text-[10px] md:text-xs font-bold rounded-full border border-surface-dark"
 										>{{ tag }}</span
 									>
 								</div>
 							</div>
 							<button
 								@click="activeSpec = null"
-								class="text-gray-400 hover:text-red-500 transition text-2xl"
+								class="text-gray-900 hover:text-red-500 transition text-2xl"
 							>
 								<Icon name="uil:times-circle" />
 							</button>
@@ -198,40 +219,105 @@
 					Technical Specifications
 				</h2>
 
-				<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 					<div
-						class="text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300"
+						class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300 flex flex-col items-center text-center group"
 					>
-						<Icon name="uil:ruler" class="text-4xl text-secondary mb-4" />
-						<h3 class="text-lg font-bold text-white">Dimensions</h3>
-						<p class="text-gray-400 text-sm mt-1">1.2m x 0.8m x 0.5m</p>
+						<div
+							class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-secondary text-2xl group-hover:scale-110 transition-transform"
+						>
+							<Icon name="uil:ruler" />
+						</div>
+						<h3 class="text-lg font-bold text-white mb-1">Dimensions</h3>
+						<p class="text-gray-300 text-sm">p x l x t</p>
 					</div>
+
 					<div
-						class="text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300"
+						class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300 flex flex-col items-center text-center group"
 					>
-						<Icon name="uil:weight" class="text-4xl text-secondary mb-4" />
-						<h3 class="text-lg font-bold text-white">Weight</h3>
-						<p class="text-gray-400 text-sm mt-1">18 kg (Dry)</p>
+						<div
+							class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-secondary text-2xl group-hover:scale-110 transition-transform"
+						>
+							<Icon name="uil:weight" />
+						</div>
+						<h3 class="text-lg font-bold text-white mb-1">Weight</h3>
+						<p class="text-gray-300 text-sm">... kg / ... lbs</p>
 					</div>
+
 					<div
-						class="text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300"
+						class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300 flex flex-col items-center text-center group"
 					>
-						<Icon
-							name="uil:tachometer-fast"
-							class="text-4xl text-secondary mb-4"
-						/>
-						<h3 class="text-lg font-bold text-white">Max Speed</h3>
-						<p class="text-gray-400 text-sm mt-1">3.5 m/s</p>
+						<div
+							class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-secondary text-2xl group-hover:scale-110 transition-transform"
+						>
+							<Icon name="uil:tachometer-fast" />
+						</div>
+						<h3 class="text-lg font-bold text-white mb-1">Max Speed</h3>
+						<p class="text-gray-300 text-sm">... m/s</p>
 					</div>
+
 					<div
-						class="text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300"
+						class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300 flex flex-col items-center text-center group"
 					>
-						<Icon
-							name="uil:battery-bolt"
-							class="text-4xl text-secondary mb-4"
-						/>
-						<h3 class="text-lg font-bold text-white">Power</h3>
-						<p class="text-gray-400 text-sm mt-1">Li-Po 6S 22000mAh</p>
+						<div
+							class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-secondary text-2xl group-hover:scale-110 transition-transform"
+						>
+							<Icon name="uil:rocket" />
+						</div>
+						<h3 class="text-lg font-bold text-white mb-1">Thrust Power</h3>
+						<p class="text-gray-300 text-sm">6.55 kgf</p>
+					</div>
+
+					<div
+						class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300 flex flex-col items-center text-center group"
+					>
+						<div
+							class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-secondary text-2xl group-hover:scale-110 transition-transform"
+						>
+							<Icon name="uil:layer-group" />
+						</div>
+						<h3 class="text-lg font-bold text-white mb-1">Hull Material</h3>
+						<p class="text-gray-300 text-sm">
+							PETG filament and fiber glass composite
+						</p>
+					</div>
+
+					<div
+						class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300 flex flex-col items-center text-center group"
+					>
+						<div
+							class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-secondary text-2xl group-hover:scale-110 transition-transform"
+						>
+							<Icon name="uil:battery-bolt" />
+						</div>
+						<h3 class="text-lg font-bold text-white mb-1">Power System</h3>
+						<p class="text-gray-300 text-sm">
+							3x Li-Po Batteries (Main, Jetson, Thruster)
+						</p>
+					</div>
+
+					<div
+						class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300 flex flex-col items-center text-center group"
+					>
+						<div
+							class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-secondary text-2xl group-hover:scale-110 transition-transform"
+						>
+							<Icon name="uil:processor" />
+						</div>
+						<h3 class="text-lg font-bold text-white mb-1">Onboard Computer</h3>
+						<p class="text-gray-300 text-sm">NVIDIA Jetson Nano</p>
+					</div>
+
+					<div
+						class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition duration-300 flex flex-col items-center text-center group"
+					>
+						<div
+							class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-secondary text-2xl group-hover:scale-110 transition-transform"
+						>
+							<Icon name="uil:rss" />
+						</div>
+						<h3 class="text-lg font-bold text-white mb-1">Sensors</h3>
+						<p class="text-gray-300 text-sm">Webcam, 2D LiDar, GPS, IMU</p>
 					</div>
 				</div>
 			</div>
@@ -271,21 +357,18 @@
 										class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent md:bg-gradient-to-t md:from-black/50 md:to-transparent opacity-60"
 									></div>
 								</div>
-
 								<div class="p-6 md:w-2/3 flex flex-col justify-center relative">
 									<div
 										class="hidden md:block absolute top-8 -left-2 w-4 h-4 bg-white transform rotate-45 border-l border-b border-gray-100 z-10"
 									></div>
-
 									<span
 										class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2"
+										>{{ phase.date }}</span
 									>
-										{{ phase.date }}
-									</span>
 									<h3 class="text-xl font-bold text-primary-dark mb-3">
 										{{ phase.title }}
 									</h3>
-									<p class="text-gray-600 text-sm leading-relaxed">
+									<p class="text-gray-600 leading-relaxed">
 										{{ phase.desc }}
 									</p>
 								</div>
@@ -306,7 +389,6 @@
 						The legacy of innovation from previous years.
 					</p>
 				</div>
-
 				<div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
 					<div
 						v-for="boat in pastBoats"
@@ -341,55 +423,81 @@
 import { ref } from "vue";
 import pastBoats from "../../assets/data/past_boats.json";
 
-// Hotspot Logic
 const activeSpec = ref<string | null>(null);
+
+// Data Hotspot
 const specs: Record<string, any> = {
-	vision: {
-		title: "Stereo Vision & Lidar",
-		desc: "Equipped with ZED 2 Stereo Camera and Velodyne Puck Lidar for real-time 3D mapping and obstacle detection.",
-		tags: ["ZED 2", "Velodyne VLP-16", "YOLOv8"],
+	perception: {
+		title: "Perception System",
+		desc: "Utilizes a Logitech C922 Pro webcam combined with YOLOv4-Tiny optimized with TensorRT for real-time object detection and environmental perception.",
+		tags: ["Logitech C922 Pro", "YOLOv4-Tiny", "TensorRT"],
+	},
+	navigation: {
+		title: "Navigation & Autonomy",
+		desc: "Powered by an NVIDIA Jetson Nano running ROS, integrating camera and 2D LiDAR sensor fusion with GPS and IMU to enable autonomous navigation and path planning.",
+		tags: ["Jetson Nano", "ROS", "Sensor Fusion", "GPS", "IMU"],
+	},
+	hull: {
+		title: "Hull & Structural Design",
+		desc: "Built with a flat-bottom catamaran hull design made from fiberglass composite, providing stability, buoyancy, and durability for autonomous operations.",
+		tags: ["Catamaran", "Flat-Bottom", "Fiberglass Composite"],
+	},
+	frame: {
+		title: "Modularity Frame System",
+		desc: "Features a lightweight, modular frame structure designed for fast assembly, easy component swapping, and simplified maintenance during development cycles.",
+		tags: ["Lightweight", "Modular", "Rapid Assembly"],
 	},
 	propulsion: {
-		title: "Vector Thrust System",
-		desc: "Configured with 4 BlueRobotics T200 thrusters enabling holonomic movement (omnidirectional control).",
-		tags: ["BlueRobotics T200", "Holonomic", "ESC 30A"],
-	},
-	computing: {
-		title: "Onboard Processing",
-		desc: "Powered by NVIDIA Jetson Orin NX for AI processing and Pixhawk Cube Orange for flight control stability.",
-		tags: ["NVIDIA Jetson Orin", "Pixhawk Cube", "ROS 2"],
+		title: "Propulsion System",
+		desc: "Equipped with a pair of Blue Robotics T200 thrusters delivering reliable thrust and precise maneuverability for autonomous missions.",
+		tags: ["Blue Robotics T200", "Precise Maneuverability"],
 	},
 };
 
-// Timeline Data
+// TIMELINE UPDATED DATA (Aug 2025 - Jan 2025[2026?])
+// Asumsi: Tahunnya 2025 -> 2026 (karena Aug - Jan berurutan)
 const timeline = [
 	{
-		date: "Sep - Oct 2025",
-		title: "Design Phase",
-		desc: "Hull optimization utilizing CFD simulations and electrical schematic design for the new sensor array.",
+		date: "August 2025",
+		title: "Research & Innovation Planning",
+		desc: "Conducting technology research, evaluating previous performance, and defining innovations for the upcoming competition.",
 		image:
 			"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop",
 	},
 	{
-		date: "Nov - Dec 2025",
-		title: "Fabrication",
-		desc: "Carbon fiber molding process for the main hull and manufacturing of custom PCB for the BMS.",
+		date: "September 2025",
+		title: "Design & System Architecture",
+		desc: "Designing the hull, analyzing stability, and developing the modular frame and overall system architecture.",
+		image:
+			"https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=600&auto=format&fit=crop",
+	},
+	{
+		date: "October 2025",
+		title: "Manufacturing & Assembly",
+		desc: "Executing hull and frame manufacturing followed by electrical assembly and integration of major components.",
 		image:
 			"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop",
 	},
 	{
-		date: "Jan - Feb 2026",
-		title: "Integration",
-		desc: "System assembly, sensor mounting, and initial buoyancy testing in the campus pool.",
+		date: "November 2025",
+		title: "Ground Testing & Software Setup",
+		desc: "Performing ground tests, configuring software and sensor-actuator systems, conducting TDR, and developing team website content.",
 		image:
-			"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop",
+			"https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop",
 	},
 	{
-		date: "Feb - Mar 2026",
-		title: "Sea Trials",
-		desc: "Intensive autonomous mission simulation and PID tuning at the local lake reservoir.",
+		date: "December 2025",
+		title: "On-Water Testing",
+		desc: "Carrying out water tests for propulsion, navigation, and object detection capabilities.",
 		image:
-			"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop",
+			"https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=600&auto=format&fit=crop",
+	},
+	{
+		date: "January 2026",
+		title: "Final Validation & Mission Testing",
+		desc: "Conducting full mission trials and final water testing before competition.",
+		image:
+			"https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=600&auto=format&fit=crop",
 	},
 ];
 </script>

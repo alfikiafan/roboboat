@@ -3,35 +3,35 @@
 		"year": "2025",
 		"boat_name": "Mandakini Zenith",
 		"competition": "Roboboat 2025 (Sarasota, USA)",
-		"link": "https://pdfobject.com/pdf/sample.pdf",
-		"image": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000"
+		"link": "https://drive.google.com/file/d/1QJmuV4IBkKs0jUoPjFI_g7CEAseUbGi4/view?usp=drive_link",
+		"image": "/images/mandakini/2025-mandakini-zenith.webp"
 	},
 	{
 		"year": "2024",
 		"boat_name": "Mandakini Hydra",
 		"competition": "Roboboat 2024 (Sarasota, USA)",
-		"link": "https://pdfobject.com/pdf/sample.pdf",
-		"image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=400&auto=format&fit=crop"
+		"link": "https://drive.google.com/file/d/1YG1aLOrvpWq66CKchG2TeCR9MrWGZw0x/view?usp=drive_link",
+		"image": "/images/mandakini/2024-mandakini-hydra.webp"
 	},
 	{
 		"year": "2023",
 		"boat_name": "Mandakini Catra",
 		"competition": "Roboboat 2023 (Sarasota, USA)",
-		"link": "https://pdfobject.com/pdf/sample.pdf",
-		"image": "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?q=80&w=400&auto=format&fit=crop"
+		"link": "https://drive.google.com/file/d/1wPYgbaZP07TN8XxS2WCk2bjZao7Eywhq/view?usp=drive_link",
+		"image": "/images/mandakini/2023-mandakini-catra.webp"
 	},
 	{
 		"year": "2022",
 		"boat_name": "Mandakini Evo",
 		"competition": "Roboboat 2022 (Sarasota, USA)",
-		"link": "https://pdfobject.com/pdf/sample.pdf",
-		"image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=400&auto=format&fit=crop"
+		"link": "https://drive.google.com/file/d/1_hrbScPkZxpB4Qb6tPF1wUuH9fZO8YgM/view?usp=drive_link",
+		"image": "/images/mandakini/2022-mandakini-evo.webp"
 	},
 	{
 		"year": "2021",
 		"boat_name": "Mandakini Neo",
 		"competition": "Roboboat 2021 (Online Submission)",
-		"link": "https://pdfobject.com/pdf/sample.pdf",
-		"image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=400&auto=format&fit=crop"
+		"link": "https://drive.google.com/file/d/1Oa40Pa7In00-WX74ZsEMp-Lx9j7j2hMG/view?usp=drive_link",
+		"image": "/images/mandakini/2021-mandakini-neo.webp"
 	}
 ]

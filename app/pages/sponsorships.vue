@@ -161,16 +161,56 @@
 			</div>
 		</section>
 
-		<section class="py-20 bg-white border-t border-gray-200">
+		<section class="py-20 bg-white border-t border-gray-200 relative z-10">
 			<div class="container mx-auto px-4 text-center">
-				<h2 class="text-2xl font-bold text-primary mb-8">Trusted Partners</h2>
-				<div class="flex flex-wrap justify-center gap-4 md:gap-6 opacity-70">
+				<h2 class="text-3xl font-bold text-primary-dark mb-12">Our Sponsors</h2>
+
+				<div
+					class="flex flex-wrap justify-center gap-8 items-center max-w-5xl mx-auto"
+				>
+					<a
+						v-for="(sponsor, index) in data.current_sponsors"
+						:key="index"
+						:href="sponsor.link || '#'"
+						target="_blank"
+						class="group bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 w-40 h-40 md:w-56 md:h-56 flex items-center justify-center"
+					>
+						<img
+							:src="sponsor.logo"
+							:alt="sponsor.name"
+							class="max-w-full max-h-full object-contain filter group-hover:brightness-110 transition"
+						/>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-20 bg-gray-100 border-t border-gray-200 relative">
+			<div
+				class="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/skulls.png')]"
+			></div>
+
+			<div class="container mx-auto px-4 text-center relative z-10">
+				<h2
+					class="text-2xl font-bold text-gray-600 mb-10 uppercase tracking-widest"
+				>
+					Past Sponsors
+				</h2>
+
+				<div
+					class="flex flex-wrap justify-center items-center gap-x-12 gap-y-10 max-w-6xl mx-auto"
+				>
 					<div
 						v-for="sponsor in data.past_sponsors"
-						:key="sponsor"
-						class="px-6 py-3 bg-gray-100 rounded-full font-bold text-gray-500 text-sm uppercase tracking-wider border border-gray-200"
+						:key="sponsor.name"
+						class="group w-24 h-16 md:w-32 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100"
+						:title="sponsor.name"
 					>
-						{{ sponsor }}
+						<img
+							:src="sponsor.logo"
+							:alt="sponsor.name"
+							class="max-w-full max-h-full object-contain mix-blend-multiply hover:scale-110 transition-transform duration-300"
+						/>
 					</div>
 				</div>
 			</div>

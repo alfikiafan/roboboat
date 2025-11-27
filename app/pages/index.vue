@@ -18,10 +18,10 @@
 				<h1
 					class="text-5xl md:text-7xl font-extrabold text-surface mb-4 drop-shadow-lg"
 				>
-					BENGAWAN UV
+					BENGAWAN UV ROBOBOAT TEAM
 				</h1>
 				<p class="text-xl text-surface-dim mb-8 font-light tracking-wide">
-					Universitas Sebelas Maret Autonomous Boat Team
+					Universitas Sebelas Maret
 				</p>
 				<div class="flex justify-center gap-4">
 					<NuxtLink

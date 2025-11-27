@@ -142,9 +142,10 @@
 							</h3>
 						</div>
 						<p class="text-gray-700 mb-8 leading-relaxed text-lg">
-							A video created by the team to introduce the team members and
-							highlight the team’s personality. The video represents our
-							distinctive characteristics and team spirit.
+							Team Introduction Video is a video created by the team to
+							introduce the team members and highlight the team’s personality.
+							The video may be made as creatively and uniquely as possible to
+							reflect the distinctive characteristics of the team.
 						</p>
 						<div
 							class="aspect-video w-full bg-black rounded-lg overflow-hidden shadow-lg"
@@ -168,10 +169,14 @@
 								<Icon name="uil:globe" /> Team Website
 							</h3>
 							<p class="text-sm text-gray-700 leading-relaxed">
-								An online platform showcasing the team’s identity, vessel
-								photos, development documentation, and blog. It serves as the
-								project’s first impression and must be visually appealing and
-								easy to navigate.
+								The Team Website is an online platform showcasing the team’s
+								identity and project. It contains team information, vessel
+								photos or videos, development documentation, design records, and
+								a blog tracking the vessel’s progress. As the project’s first
+								impression, the website must be visually appealing and easy to
+								navigate, using core design principles such as contrast,
+								repetition, alignment, and grouping to present content
+								effectively.
 							</p>
 						</div>
 						<div
@@ -184,9 +189,12 @@
 								Presentation
 							</h3>
 							<p class="text-sm text-gray-700 leading-relaxed">
-								A presentation prepared for onsite judges to explain our design
-								strategy. This outlines the system design approach used to
-								address the challenges in the Autonomy Challenge.
+								Judges will inspect the team’s vehicle and assess technical
+								design, technical innovation, and craftsmanship of the design.
+								Team members will present to answer technical questions posed by
+								the judges during this inspection and be prepared to explain
+								their design strategy and how decisions made impacts on the
+								technical design, functionality, and craftsmanship.
 							</p>
 						</div>
 					</div>

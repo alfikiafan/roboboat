@@ -13,6 +13,27 @@
 			"research_area": "Artificial Intelligence",
 			"email": "suyanto@ft.uns.ac.id",
 			"image": ""
+		},
+		{
+			"name": "Dr. Eng. Budi Santoso",
+			"role": "Research Advisor",
+			"research_area": "Machine Learning",
+			"email": "budi.santoso@ft.uns.ac.id",
+			"image": ""
+		},
+		{
+			"name": "Dr. Ir. Agus Harjoko, M.Eng.",
+			"role": "Mechanical Advisor",
+			"research_area": "Marine Engineering",
+			"email": "agus.harjoko@ft.uns.ac.id",
+			"image": ""
+		},
+		{
+			"name": "Dr. Eng. Rina Yuliati, S.T., M.T.",
+			"role": "Electrical Advisor",
+			"research_area": "Control System",
+			"email": "rina.yuliati@ft.uns.ac.id",
+			"image": ""
 		}
 	],
 	"team_leader": [
@@ -57,6 +78,26 @@
 			"instagram": "#",
 			"linkedin": "#",
 			"image": ""
+		},
+		{
+			"name": "Rian Saputra",
+			"role": "Electronics Engineer",
+			"major": "Electrical Engineering",
+			"research_area": "Sensor Integration",
+			"email": "rian@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
+		},
+		{
+			"name": "Kevin Pratama",
+			"role": "Propulsion Specialist",
+			"major": "Mechanical Engineering",
+			"research_area": "Propulsion System",
+			"email": "kevin@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
 		}
 	],
 	"non_technical_team": [
@@ -79,23 +120,108 @@
 			"instagram": "#",
 			"linkedin": "#",
 			"image": ""
+		},
+		{
+			"name": "Siti Aminah",
+			"role": "Finance Manager",
+			"major": "Accounting",
+			"research_area": "Financial Planning",
+			"email": "siti@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
+		},
+		{
+			"name": "Dedi Kurniawan",
+			"role": "Sponsorship Staff",
+			"major": "Communication Science",
+			"research_area": "Public Relations",
+			"email": "dedi@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
+		},
+		{
+			"name": "Maya Indah",
+			"role": "Secretary",
+			"major": "Public Administration",
+			"research_area": "Administrative Archives",
+			"email": "maya@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
+		},
+		{
+			"name": "Bayu Perkasa",
+			"role": "Videographer",
+			"major": "Communication",
+			"research_area": "Visual Storytelling",
+			"email": "bayu@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
+		},
+		{
+			"name": "Tiara Dewi",
+			"role": "Social Media Specialist",
+			"major": "Marketing",
+			"research_area": "Digital Marketing",
+			"email": "tiara@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
+		},
+		{
+			"name": "Reza Rahardian",
+			"role": "Logistics Manager",
+			"major": "Industrial Engineering",
+			"research_area": "Supply Chain",
+			"email": "reza@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
+		},
+		{
+			"name": "Ninda Kirana",
+			"role": "External Relations",
+			"major": "International Relations",
+			"research_area": "Global Partnership",
+			"email": "ninda@student.uns.ac.id",
+			"instagram": "#",
+			"linkedin": "#",
+			"image": ""
 		}
 	],
 	"past_team": [
 		{
 			"name": "Alumni 2025",
 			"year": "Roboboat 2025",
-			"image": ""
+			"image": "",
+			"website": "/legacy/2025/index.html"
 		},
 		{
 			"name": "Alumni 2024",
 			"year": "Roboboat 2024",
-			"image": ""
+			"image": "",
+			"website": "/legacy/2024/index.html"
 		},
 		{
 			"name": "Alumni 2023",
 			"year": "Roboboat 2023",
-			"image": ""
+			"image": "",
+			"website": "/legacy/2023/index.html"
+		},
+		{
+			"name": "Alumni 2022",
+			"year": "Roboboat 2022",
+			"image": "",
+			"website": "/legacy/2022/index.html"
+		},
+		{
+			"name": "Alumni 2021",
+			"year": "Roboboat 2021",
+			"image": "",
+			"website": "/legacy/2021/index.html"
 		}
 	]
 }

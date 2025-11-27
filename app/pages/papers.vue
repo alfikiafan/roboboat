@@ -21,11 +21,12 @@
 				<div
 					v-for="(paper, index) in papersData"
 					:key="index"
-					class="group flex flex-col md:flex-row md:items-center justify-between bg-white border border-gray-200 p-6 rounded-2xl hover:shadow-lg hover:border-primary/30 transition-all duration-300 gap-6"
+					@click="openPdf(paper.link)"
+					class="group flex flex-col md:flex-row md:items-center justify-between bg-white border border-gray-200 p-6 rounded-2xl hover:shadow-lg hover:border-primary/30 transition-all duration-300 gap-6 cursor-pointer"
 				>
 					<div class="flex items-start gap-4 flex-grow">
 						<div
-							class="w-12 h-12 bg-primary/5 text-primary rounded-xl flex items-center justify-center text-2xl flex-shrink-0"
+							class="w-12 h-12 bg-primary/5 text-primary rounded-xl flex items-center justify-center text-2xl flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors"
 						>
 							<Icon name="uil:file-alt" />
 						</div>
@@ -55,29 +56,29 @@
 						class="flex flex-col md:flex-row items-center gap-4 md:gap-6 flex-shrink-0 w-full md:w-auto"
 					>
 						<div
-							class="w-full md:w-48 h-32 md:h-24 rounded-lg overflow-hidden border border-gray-200 relative group-hover:border-primary/30 transition-all"
+							class="w-full md:w-48 h-32 md:h-24 bg-gray-100 rounded-lg overflow-hidden border border-gray-200 relative group-hover:border-primary/30 transition-all"
 						>
-							<div class="absolute inset-0 transition-colors z-10"></div>
+							<div
+								class="absolute inset-0 bg-black/0 group-hover:bg-black/0 transition-colors z-10"
+							></div>
 							<img
 								:src="paper.image"
 								:alt="paper.boat_name + ' Design'"
-								class="w-full h-full object-cover filter transition-all duration-500 scale-105 group-hover:scale-110"
+								class="w-full h-full object-cover transition-all duration-500 scale-100 group-hover:scale-110"
 							/>
 							<div
-								class="absolute bottom-1 right-1 bg-white/80 backdrop-blur text-[10px] px-2 py-0.5 rounded text-gray-600 font-bold z-20"
+								class="absolute bottom-1 right-1 bg-white/90 backdrop-blur text-[10px] px-2 py-0.5 rounded text-gray-700 font-bold z-20 shadow-sm"
 							>
 								Design Preview
 							</div>
 						</div>
 
-						<a
-							:href="paper.link"
-							target="_blank"
-							class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-surface text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-colors text-sm whitespace-nowrap flex-shrink-0"
+						<div
+							class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-surface text-primary font-bold rounded-lg group-hover:bg-primary group-hover:text-white transition-colors text-sm whitespace-nowrap flex-shrink-0"
 						>
 							<Icon name="uil:file-download" class="text-lg" />
 							Download PDF
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -87,4 +88,10 @@
 
 <script setup lang="ts">
 import papersData from "../../assets/data/papers.json";
+
+const openPdf = (link: string) => {
+	if (link) {
+		window.open(link, "_blank");
+	}
+};
 </script>

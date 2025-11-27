@@ -17,7 +17,7 @@ export default defineNuxtConfig({
 
 	app: {
 		head: {
-			title: "Bengawan UV - Roboboat Team UNS",
+			title: "Bengawan UV Roboboat Team UNS",
 			meta: [
 				{
 					name: "description",

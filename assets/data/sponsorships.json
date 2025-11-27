@@ -111,14 +111,40 @@
 			]
 		}
 	],
+	"current_sponsors": [
+		{
+			"name": "Nama Sponsor 1",
+			"logo": "https://images.seeklogo.com/logo-png/48/2/pt-pelayaran-nasional-indonesia-pt-pelni-2023-logo-png_seeklogo-485087.png",
+			"link": ""
+		},
+		{
+			"name": "Nama Sponsor 2",
+			"logo": "",
+			"link": ""
+		},
+		{
+			"name": "Nama Sponsor 3",
+			"logo": "",
+			"link": ""
+		},
+		{
+			"name": "Nama Sponsor 4",
+			"logo": "",
+			"link": ""
+		}
+	],
 	"past_sponsors": [
-		"Pertamina",
-		"Bank Jateng",
-		"Telkom Indonesia",
-		"Wika",
-		"Len Industri",
-		"Pelindo",
-		"PLN",
-		"Toyota"
+		{
+			"name": "Spesial Sambal",
+			"logo": "/images/sponsors/past-sponsors/spesial-sambal.webp"
+		},
+		{
+			"name": "Bank Jateng",
+			"logo": "/images/sponsors/past-sponsors/bank-jateng.webp"
+		},
+		{
+			"name": "Kahf",
+			"logo": "/images/sponsors/past-sponsors/kahf.webp"
+		}
 	]
 }

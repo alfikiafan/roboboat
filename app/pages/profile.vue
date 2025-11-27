@@ -42,18 +42,6 @@
 			</div>
 		</section>
 
-		<section class="py-16 bg-surface overflow-hidden">
-			<div class="container mx-auto px-4 mb-12 text-center">
-				<h2
-					class="text-3xl font-bold text-primary-dark uppercase tracking-widest"
-				>
-					Our Journey
-				</h2>
-				<div class="w-20 h-1 bg-secondary mx-auto mt-4 rounded-full"></div>
-			</div>
-			<AboutTimeline />
-		</section>
-
 		<section class="py-16 bg-gray-50 relative">
 			<div class="container mx-auto px-4 relative z-10">
 				<h2 class="text-3xl font-bold text-primary-dark mb-10 text-center">
@@ -140,28 +128,33 @@
 		<div
 			class="container mx-auto px-4 py-16 space-y-24 border-t border-gray-200"
 		>
-			<section id="supervisor" class="scroll-mt-24">
-				<div class="flex items-center gap-4 mb-8">
+			<section id="supervisor" class="scroll-mt-24 text-center">
+				<div class="mb-10">
 					<h2 class="text-3xl font-bold text-primary-dark">Supervisors</h2>
-					<div class="h-1 flex-grow bg-surface-dark rounded"></div>
+					<div class="h-1 w-24 bg-surface-dark rounded mx-auto mt-4"></div>
 				</div>
-				<div class="grid md:grid-cols-4 gap-8 justify-center">
-					<TeamMemberCard
+
+				<div class="flex flex-wrap justify-center gap-8">
+					<div
 						v-for="member in teamData.supervisors"
 						:key="member.name"
-						v-bind="member"
-					/>
+						class="w-full sm:w-[45%] lg:w-[22%] flex justify-center"
+					>
+						<div class="w-full max-w-[18rem]">
+							<TeamMemberCard v-bind="member" :is-supervisor="true" />
+						</div>
+					</div>
 				</div>
 			</section>
 
-			<section id="team2026" class="scroll-mt-24">
-				<div class="flex items-center gap-4 mb-8">
+			<section id="team2026" class="scroll-mt-24 text-center">
+				<div class="mb-12">
 					<h2 class="text-3xl font-bold text-primary-dark">2026 Team</h2>
-					<div class="h-1 flex-grow bg-surface-dark rounded"></div>
+					<div class="h-1 w-24 bg-surface-dark rounded mx-auto mt-4"></div>
 				</div>
 
-				<div class="flex mb-12">
-					<div class="w-full max-w-xs">
+				<div class="flex justify-center mb-16">
+					<div class="w-full max-w-[18rem]">
 						<TeamMemberCard
 							v-for="member in teamData.team_leader"
 							:key="member.name"
@@ -171,38 +164,44 @@
 				</div>
 
 				<div class="mb-16">
-					<div class="flex items-center gap-4 mb-8">
-						<h3
-							class="text-xl font-bold text-primary tracking-widest text-left"
-						>
+					<div class="mb-8">
+						<h3 class="text-2xl font-bold text-primary tracking-widest">
 							Technical Division
 						</h3>
-						<div class="h-px flex-grow bg-gray-200"></div>
+						<div class="h-px w-32 bg-gray-300 mx-auto mt-3"></div>
 					</div>
-					<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-						<TeamMemberCard
+
+					<div class="flex flex-wrap justify-center gap-8">
+						<div
 							v-for="member in teamData.technical_team"
 							:key="member.name"
-							v-bind="member"
-						/>
+							class="w-full sm:w-[45%] lg:w-[22%] flex justify-center"
+						>
+							<div class="w-full max-w-[18rem]">
+								<TeamMemberCard v-bind="member" />
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div>
-					<div class="flex items-center gap-4 mb-8">
-						<h3
-							class="text-xl font-bold text-primary tracking-widest text-left"
-						>
+					<div class="mb-8">
+						<h3 class="text-2xl font-bold text-primary tracking-widest">
 							Non-Technical Division
 						</h3>
-						<div class="h-px flex-grow bg-gray-200"></div>
+						<div class="h-px w-32 bg-gray-300 mx-auto mt-3"></div>
 					</div>
-					<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-						<TeamMemberCard
+
+					<div class="flex flex-wrap justify-center gap-8">
+						<div
 							v-for="member in teamData.non_technical_team"
 							:key="member.name"
-							v-bind="member"
-						/>
+							class="w-full sm:w-[45%] lg:w-[22%] flex justify-center"
+						>
+							<div class="w-full max-w-[18rem]">
+								<TeamMemberCard v-bind="member" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -210,21 +209,26 @@
 
 		<section
 			id="past-teams"
-			class="py-16 bg-gray-50 border-t border-gray-200 scroll-mt-24"
+			class="py-16 bg-gray-50 border-t border-gray-200 scroll-mt-24 text-center"
 		>
 			<div class="container mx-auto px-4">
-				<div class="flex items-center gap-4 mb-8">
+				<div class="mb-10">
 					<h2 class="text-3xl font-bold text-primary-dark">Past Team</h2>
-					<div class="h-1 flex-grow bg-surface-dark rounded"></div>
+					<div class="h-1 w-24 bg-surface-dark rounded mx-auto mt-4"></div>
 				</div>
-				<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-					<TeamMemberCard
+
+				<div class="flex flex-wrap justify-center gap-6">
+					<div
 						v-for="member in teamData.past_team"
 						:key="member.name"
-						v-bind="member"
-						:role="member.year"
-						class="opacity-90 hover:opacity-100"
-					/>
+						class="w-full md:w-[45%]"
+					>
+						<TeamMemberCard
+							v-bind="member"
+							:role="member.year"
+							class="opacity-90 hover:opacity-100 h-full"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>

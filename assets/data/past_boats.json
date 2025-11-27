@@ -2,26 +2,26 @@
 	{
 		"year": "2025",
 		"name": "Mandakini Zenith",
-		"image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=1000&auto=format&fit=crop"
+		"image": "/images/mandakini/2025-mandakini-zenith.webp"
 	},
 	{
 		"year": "2024",
 		"name": "Mandakini Hydra",
-		"image": "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?q=80&w=1000&auto=format&fit=crop"
+		"image": "/images/mandakini/2024-mandakini-hydra.webp"
 	},
 	{
 		"year": "2023",
 		"name": "Mandakini Catra",
-		"image": "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=1000&auto=format&fit=crop"
+		"image": "/images/mandakini/2023-mandakini-catra.webp"
 	},
 	{
 		"year": "2022",
 		"name": "Mandakini Evo",
-		"image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1000&auto=format&fit=crop"
+		"image": "/images/mandakini/2022-mandakini-evo.webp"
 	},
 	{
 		"year": "2021",
 		"name": "Mandakini Neo",
-		"image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1000&auto=format&fit=crop"
+		"image": "/images/mandakini/2021-mandakini-neo.webp"
 	}
 ]

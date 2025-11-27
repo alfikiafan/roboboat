@@ -49,7 +49,7 @@
 
 			<div class="pt-16 border-t border-gray-100">
 				<h3
-					class="text-lg font-bold text-primary-light mb-8 uppercase tracking-[0.2em]"
+					class="text-2xl font-bold text-primary-light mb-8 uppercase tracking-[0.2em]"
 				>
 					Supported By
 				</h3>
@@ -69,8 +69,7 @@
 								class="w-full h-full object-contain"
 							/>
 						</div>
-						<span
-							class="text-[10px] font-bold text-gray-500 uppercase tracking-wide"
+						<span class="font-bold text-gray-500 uppercase tracking-wide"
 							>Universitas Sebelas Maret</span
 						>
 					</div>
@@ -85,8 +84,7 @@
 								class="w-full h-full object-contain"
 							/>
 						</div>
-						<span
-							class="text-[10px] font-bold text-gray-500 uppercase tracking-wide"
+						<span class="font-bold text-gray-500 uppercase tracking-wide"
 							>LPPM Universitas Sebelas Maret</span
 						>
 					</div>
